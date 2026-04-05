@@ -433,7 +433,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation"><span class="header-section-number">2.1</span> Installation</a></li>
   <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage"><span class="header-section-number">2.2</span> Usage</a></li>
   </ul></li>
-  <li><a href="#command-reference" id="toc-command-reference" class="nav-link" data-scroll-target="#command-reference"><span class="header-section-number">3</span> Command Reference</a></li>
+  <li><a href="#command-reference" id="toc-command-reference" class="nav-link" data-scroll-target="#command-reference"><span class="header-section-number">3</span> Command Reference</a>
+  <ul class="collapse">
+  <li><a href="#command-banner" id="toc-command-banner" class="nav-link" data-scroll-target="#command-banner"><span class="header-section-number">3.1</span> <code>banner</code></a></li>
+  <li><a href="#command-clear" id="toc-command-clear" class="nav-link" data-scroll-target="#command-clear"><span class="header-section-number">3.2</span> <code>clear</code></a></li>
+  <li><a href="#command-create" id="toc-command-create" class="nav-link" data-scroll-target="#command-create"><span class="header-section-number">3.3</span> <code>create</code></a></li>
+  <li><a href="#command-diagnostic" id="toc-command-diagnostic" class="nav-link" data-scroll-target="#command-diagnostic"><span class="header-section-number">3.4</span> <code>diagnostic</code></a></li>
+  <li><a href="#command-man" id="toc-command-man" class="nav-link" data-scroll-target="#command-man"><span class="header-section-number">3.5</span> <code>man</code></a></li>
+  <li><a href="#command-markdown" id="toc-command-markdown" class="nav-link" data-scroll-target="#command-markdown"><span class="header-section-number">3.6</span> <code>markdown</code></a></li>
+  <li><a href="#command-pause" id="toc-command-pause" class="nav-link" data-scroll-target="#command-pause"><span class="header-section-number">3.7</span> <code>pause</code></a></li>
+  <li><a href="#command-python_prg" id="toc-command-python_prg" class="nav-link" data-scroll-target="#command-python_prg"><span class="header-section-number">3.8</span> <code>python_prg</code></a></li>
+  <li><a href="#command-shell" id="toc-command-shell" class="nav-link" data-scroll-target="#command-shell"><span class="header-section-number">3.9</span> <code>shell</code></a></li>
+  <li><a href="#command-sysinfo" id="toc-command-sysinfo" class="nav-link" data-scroll-target="#command-sysinfo"><span class="header-section-number">3.10</span> <code>sysinfo</code></a></li>
+  <li><a href="#command-tree" id="toc-command-tree" class="nav-link" data-scroll-target="#command-tree"><span class="header-section-number">3.11</span> <code>tree</code></a></li>
+  <li><a href="#command-version" id="toc-command-version" class="nav-link" data-scroll-target="#command-version"><span class="header-section-number">3.12</span> <code>version</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -466,7 +480,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Github <span style="float: right; font-weight: normal; font-size: 0.85em;">Version: 0.0.1 &nbsp;&nbsp; Date: 2026-04-05 14:41:20</span>
+<span class="screen-reader-only">Note</span>Github <span style="float: right; font-weight: normal; font-size: 0.85em;">Version: 0.0.1 &nbsp;&nbsp; Date: 2026-04-05 15:04:47</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -492,8 +506,160 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="command-reference" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Command Reference</h1>
+<section id="command-banner" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="command-banner"><span class="header-section-number">3.1</span> <code>banner</code></h2>
+<pre class="text"><code>Usage:
+    banner [-c CHAR] [-n WIDTH] [-i INDENT] [-r COLOR] TEXT...
+
+Options:
+    -c CHAR    The character to use [default: #]
+    -n WIDTH   The width of the banner [default: 70]
+    -i INDENT  The indentation [default: 0]
+    -r COLOR   The color (RED, GREEN, BLUE) [default: NORMAL]
+
+Description:
+    Prints a banner from a one line text message.</code></pre>
+</section>
+<section id="command-clear" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="command-clear"><span class="header-section-number">3.2</span> <code>clear</code></h2>
+<pre class="text"><code>Usage:
+    clear
+
+Description:
+    Clears the screen.</code></pre>
+</section>
+<section id="command-create" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="command-create"><span class="header-section-number">3.3</span> <code>create</code></h2>
+<pre class="text"><code>Usage:
+    create COMMAND
+
+Description:
+    Creates a new Cloudmesh plugin directory structure (please make sure
+    to replace &lt;COMMAND&gt; with a useful command name of your own.)
+
+    + cloudmesh-ai-&lt;COMMAND&gt;
+    ├── .gitignore
+    ├── Makefile
+    ├── README.md
+    ├── cma_plugin
+    │   └── &lt;COMMAND&gt;.py
+    └── pyproject.toml
+
+    The command can be installed with the following commands:
+
+    cd cloudmesh-ai-&lt;COMMAND&gt;
+    pip install -e .
+
+    Once you are happy with the command you could host it on github.</code></pre>
+</section>
+<section id="command-diagnostic" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="command-diagnostic"><span class="header-section-number">3.4</span> <code>diagnostic</code></h2>
+<pre class="text"><code>*** No help on diagnostic</code></pre>
+</section>
+<section id="command-man" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="command-man"><span class="header-section-number">3.5</span> <code>man</code></h2>
+<pre class="text"><code>Usage:
+    man [-f] [--format=FORMAT] [COMMAND]
+
+Description:
+    Generates a manual. If no command is provided, it lists all 
+    discovered plugins and their full manual pages.
+
+Options:
+    -f               Show the file path for each plugin (text mode only).
+    --format=FORMAT  Output format: text, md, rst [default: text].</code></pre>
+</section>
+<section id="command-markdown" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="command-markdown"><span class="header-section-number">3.6</span> <code>markdown</code></h2>
+<pre class="text"><code>Usage:
+    markdown fix gemini &lt;filename&gt;
+
+Description:
+    Surgically removes Gemini 'Bash' labels, removes leading 
+    indentation for code blocks, and wraps naked commands.</code></pre>
+</section>
+<section id="command-pause" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="command-pause"><span class="header-section-number">3.7</span> <code>pause</code></h2>
+<pre class="text"><code>Usage:
+    pause TIME
+
+Description:
+    Pauses the shell execution for a specified duration.
+    TIME can be a number (seconds) or include a unit (s, m, h).
+
+Examples:
+    pause 10
+    pause 5s
+    pause 2m</code></pre>
+</section>
+<section id="command-python_prg" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="command-python_prg"><span class="header-section-number">3.8</span> <code>python_prg</code></h2>
+<pre class="text"><code>*** No help on python_prg</code></pre>
+</section>
+<section id="command-shell" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="command-shell"><span class="header-section-number">3.9</span> <code>shell</code></h2>
+<pre class="text"><code>Usage:
+    shell -f FILE
+    shell [COMMAND...]
+
+Description:
+    Executes a command or a script file in the system shell.
+
+Options:
+    -f FILE  Pass a script file to be executed by the shell.
+
+Arguments:
+    COMMAND  The system command to execute.</code></pre>
+</section>
+<section id="command-sysinfo" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="command-sysinfo"><span class="header-section-number">3.10</span> <code>sysinfo</code></h2>
+<pre class="text"><code>Usage:
+    sysinfo [-a] [-v] [-t] [-m] [-d] [-b] [-n] [-u] [-l] [-g] [-c]
+
+Description:
+    Prints hardware and system information.
+
+Options:
+    -a        Show all information
+    -v        Verbose topology view
+    -t        Thread/Core summary
+    -m        Display memory usage (RAM/Swap)
+    -d        Display disk usage
+    -b        Display battery status
+    -n        Display network interfaces (IPs)
+    -u        Display system uptime
+    -l        Display current CPU load
+    -g        Display GPU information
+    -c        Display CPU/GPU temperatures (Celsius)</code></pre>
+</section>
+<section id="command-tree" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="command-tree"><span class="header-section-number">3.11</span> <code>tree</code></h2>
+<pre class="text"><code>Usage:
+    tree [-c] [PATH]
+
+Description:
+    Prints a visual directory tree of relevant code, 
+    respecting .gitignore rules and hiding meta-files.
+    Use -c to also print the contents of each file.
+
+Options:
+    -c        Cat/Print the content of each file found.
+    PATH      The directory to start from [default: .].</code></pre>
+</section>
+<section id="command-version" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="command-version"><span class="header-section-number">3.12</span> <code>version</code></h2>
+<pre class="text"><code>Usage:
+    version [-f] [--format=FORMAT]
+
+Description:
+    Lists discovered plugins and versions in a formatted table.
+
+Options:
+    -f                Show the file path for each plugin.
+    --format=FORMAT   Output format: table, md, rst, json [default: table].</code></pre>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

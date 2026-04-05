@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cloudmesh-ai.github.io/index.html</loc>
-    <lastmod>2026-04-05T16:01:41.386Z</lastmod>
+    <lastmod>2026-04-05T14:23:40.174Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/repos/cloudmesh-ai-multipass.html</loc>
+    <lastmod>2026-04-05T18:41:20.153Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/repos/cloudmesh-ai-common.html</loc>
+    <lastmod>2026-04-05T18:41:20.152Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/manual/structure.html</loc>
+    <lastmod>2026-04-05T15:46:16.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/commands/shell.html</loc>
+    <lastmod>2026-04-05T15:13:06.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/commands/index.html</loc>
+    <lastmod>2026-04-05T18:41:20.217Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/manual/developers.html</loc>
+    <lastmod>2026-04-05T18:41:20.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/manual/versions.html</loc>
+    <lastmod>2026-04-05T18:41:20.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/repos/cloudmesh-ai-git.html</loc>
+    <lastmod>2026-04-05T18:41:20.152Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudmesh-ai.github.io/docs/repos/cloudmesh-ai-shell.html</loc>
+    <lastmod>2026-04-05T18:41:20.153Z</lastmod>
   </url>
 </urlset>

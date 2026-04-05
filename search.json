@@ -20,5 +20,242 @@
       "Home",
       "Welcome"
     ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html",
+    "href": "docs/repos/cloudmesh-ai-multipass.html",
+    "title": "Multipass",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 14:41:20\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-multipass",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html#installation",
+    "href": "docs/repos/cloudmesh-ai-multipass.html#installation",
+    "title": "Multipass",
+    "section": "2.1 Installation",
+    "text": "2.1 Installation\npip install cloudmesh-multipass\ncms help multipass",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html#last-verified-install-test",
+    "href": "docs/repos/cloudmesh-ai-multipass.html#last-verified-install-test",
+    "title": "Multipass",
+    "section": "2.2 Last verified install test",
+    "text": "2.2 Last verified install test\ncms multipass deploy * Ubuntu 22.04, Dec 2023Command multipass",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html#manual-page",
+    "href": "docs/repos/cloudmesh-ai-multipass.html#manual-page",
+    "title": "Multipass",
+    "section": "2.3 Manual Page",
+    "text": "2.3 Manual Page\n\nCommand multipass\n=================\n\n::\n\n  Usage:\n        multipass deploy [--dryrun]\n        multipass images [--output=OUTPUT] [--refresh] [--purge] [--dryrun]\n        multipass list [--output=OUTPUT] [--dryrun]\n        multipass create NAMES [--image=IMAGE]\n                               [--size=SIZE]\n                               [--memory=MEMORY]\n                               [--cpus=CPUS]\n                               [--disk=DISK]\n                               [--dryrun]\n                               [--cloudinit=FILE_OR_URL]\n                               [--network=NETWORK]\n                               [--bridged]\n                               [--mount=SOURCE]\n                               [--timeout=TIMEOUT]\n        multipass delete NAMES [--output=OUTPUT][--dryrun]\n        multipass destroy NAMES [--output=OUTPUT][--dryrun]\n        multipass shell NAMES [--dryrun]\n        multipass run COMMAND NAMES [--output=OUTPUT] [--dryrun]\n        multipass info NAMES [--output=OUTPUT] [--dryrun]\n        multipass suspend NAMES [--output=OUTPUT] [--dryrun]\n        multipass resume NAMES [--output=OUTPUT] [--dryrun]\n        multipass start NAMES [--output=OUTPUT] [--dryrun]\n        multipass stop NAMES [--output=OUTPUT] [--dryrun]\n        multipass reboot NAMES [--output=OUTPUT] [--dryrun]\n        multipass mount SOURCE DESTINATION [--dryrun]\n        multipass umount SOURCE [--dryrun]\n        multipass transfer SOURCE DESTINATION [--dryrun]\n        multipass set key=VALUE [--dryrun]\n        multipass get [key] [--dryrun]\n        multipass deploy [--dryrun]\n        multipass rename NAMES [--dryrun]\n        multipass test\n        multipass vm defaults [--output=OUTPUT]\n        multipass version\n\n  Interface to multipass\n\n  Options:\n       --output=OUTPUT    the output format [default: table]. Other\n                          values are yaml, csv and json.\n\n       --image=IMAGE      the image name to be used to create a VM.\n\n       --cpus=CPUS        Number of CPUs to allocate.\n                          Minimum: 1, default: 1.\n\n       --size=SIZE        Disk space to allocate. Positive integers,\n                          in bytes, or with K, M, G suffix.\n                          Minimum: 512M, default: 5G.\n\n       --mem=MEMORY       Amount of memory to allocate. Positive\n                          integers, in bytes, or with K, M, G suffix.\n                          Minimum: 128M, default: 1G.\n\n       --cloudinit=FILE  Path to a user-data cloudinit configuration\n\n  Arguments:\n      NAMES   the names of the virtual machine\n\n  Description:\n\n      The NAMES can be a parameterized hostname such as\n\n        red[0-1,5] = red0,red1,red5\n\n  Commands:\n\n    First you can see the supported multipass images with\n\n        cms multipass images\n\n    Create and launch a new vm using\n\n        cms multipass create NAMES\n\n        Optionally you can provide image name, size, memory,\n        number of cpus to create an instance.\n\n    Start one or multiple multipass vms with\n\n        cms multipass start NAMES\n\n    Stop one or multiple vms with\n\n        cms multipass stop NAMES\n\n    Gets all multipass internal key values with\n\n      cms multipass get\n\n    Gets a specific internal key.\n\n      cms multipass get KEY\n\n      Known keys\n\n          client.gui.autostart\n          client.primary-name\n          local.driver\n\n          are there more?\n\n    Reboot (stop and then start) vms with\n\n        cms multipass reboot NAMES\n\n    Delete one of multiple vms without purging with\n\n        cms multipass delete NAMES\n\n    Destory multipass vms (delete and purge) with\n\n        cms multipass destroy NAMES\n\n        Caution: Once destroyed everything in vm will be deleted\n                 and cannot be recovered.\n\n    WHEN YOU IMPLEMENT A FUNCTION INCLUDE MINIMAL\n      DOCUMENTATION HERE",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-common.html",
+    "href": "docs/repos/cloudmesh-ai-common.html",
+    "title": "Common",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 14:41:20\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-common\n\n\n\n1 README\n\n\n2 cloudmesh-common\nCommon libraries\n\n\n\n3 Command Reference",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Common"
+    ]
+  },
+  {
+    "objectID": "docs/manual/structure.html",
+    "href": "docs/manual/structure.html",
+    "title": "Structure",
+    "section": "",
+    "text": "Project Tree: /Users/grey/Desktop/class/cloudmesh-ai/cloudmesh-ai.github.io\u001b[94m\u001b[0m\n============================================================\u001b[94m\u001b[0m\n├── .github\n│   └── workflows\n│       └── publish.yml\n├── .gitignore\n├── Makefile\n├── _quarto.yml\n├── _site\n│   ├── docs\n│   │   ├── commands\n│   │   │   ├── index.html\n│   │   │   └── shell.html\n│   │   ├── manual\n│   │   │   ├── structure.html\n│   │   │   └── versions.html\n│   │   └── repos\n│   │       ├── cloudmesh-ai-common.html\n│   │       ├── cloudmesh-ai-git.html\n│   │       ├── cloudmesh-ai-multipass.html\n│   │       └── cloudmesh-ai-shell.html\n│   ├── index.html\n│   ├── search.json\n│   └── site_libs\n│       ├── bootstrap\n│       │   ├── bootstrap-763170507901135a2a0113b53e723e43.min.css\n│       │   ├── bootstrap-dark-1210bbd7b8c859d7286f13542c93556b.min.css\n│       │   ├── bootstrap-icons.css\n│       │   ├── bootstrap-icons.woff\n│       │   └── bootstrap.min.js\n│       ├── clipboard\n│       │   └── clipboard.min.js\n│       ├── quarto-html\n│       │   ├── anchor.min.js\n│       │   ├── popper.min.js\n│       │   ├── quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css\n│       │   ├── quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css\n│       │   ├── quarto.js\n│       │   ├── tabsets\n│       │   │   └── tabsets.js\n│       │   ├── tippy.css\n│       │   └── tippy.umd.min.js\n│       ├── quarto-nav\n│       │   ├── headroom.min.js\n│       │   └── quarto-nav.js\n│       └── quarto-search\n│           ├── autocomplete.umd.js\n│           ├── fuse.min.js\n│           └── quarto-search.js\n├── bin\n│   └── make_www.py\n├── docs\n│   ├── commands\n│   │   ├── index.qmd\n│   │   └── shell.qmd\n│   ├── manual\n│   │   ├── structure.qmd\n│   │   └── versions.qmd\n│   └── repos\n│       ├── cloudmesh-ai-common.qmd\n│       ├── cloudmesh-ai-git.qmd\n│       ├── cloudmesh-ai-multipass.qmd\n│       └── cloudmesh-ai-shell.qmd\n└── index.qmd"
+  },
+  {
+    "objectID": "docs/commands/shell.html",
+    "href": "docs/commands/shell.html",
+    "title": "Command: shell",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 11:13:06\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell"
+  },
+  {
+    "objectID": "docs/commands/shell.html#manual-page",
+    "href": "docs/commands/shell.html#manual-page",
+    "title": "Command: shell",
+    "section": "1 Manual Page",
+    "text": "1 Manual Page\nUsage:\n    shell -f FILE\n    shell [COMMAND...]\n\nDescription:\n    Executes a command or a script file in the system shell.\n\nOptions:\n    -f FILE  Pass a script file to be executed by the shell.\n\nArguments:\n    COMMAND  The system command to execute."
+  },
+  {
+    "objectID": "docs/commands/index.html",
+    "href": "docs/commands/index.html",
+    "title": "Command Index",
+    "section": "",
+    "text": "This index contains links to all commands discovered across components:",
+    "crumbs": [
+      "Home",
+      "Commands",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "docs/manual/developers.html",
+    "href": "docs/manual/developers.html",
+    "title": "Developers Manual",
+    "section": "",
+    "text": "This document outlines the workflow for building, validating, and publishing new versions of cloudmesh-cma.\n\n\nBefore attempting a release, ensure you have:\n\nAn account and API Token for TestPyPI.\nAn account and API Token for PyPI.\nThe build and twine packages installed:\n\n  pip install --upgrade build twine\n\n\n\n\nTo avoid synchronization errors, we use a single version number at\n\ncma_shell/__init__.py.\n\nInstead of opening files manually to change the version, use the following commands to suggest a new version say\nmake version\n\nUpdate to a new version: Decide upon your new number. Let us assume it is 4.0.1.dev1. Now update it in the file with:\n\nmake patch V=4.0.1.dev1\n\n\nCRITICAL: PyPI and TestPyPI are immutable. You cannot overwrite a version once uploaded.\n\nTesting: Set version to a development suffix (e.g., 4.0.1.dev1).\nVerification: Upload and install from TestPyPI.\nProduction: Once verified, remove the suffix (e.g., 4.0.1) and upload to the real PyPI.\n\n\n\n\n\n\nThe Makefile automates the chain of dependencies. Each step ensures the previous one succeeded.\n\n\nmake version             # suggest a new version\nmake patch V=4.0.1.dev1  # Set your test version\nmake check               # clean -&gt; build -&gt; twine check\n\nSuccess: Should see PASSED for both the wheel and source distribution.\n\n\n\n\nTest your .dev version here first to ensure the README renders and the package is intact.\nmake test-upload\nMake sure you have a token from pypi and store it in ~/.pypirc as discussed at the end of this file. Otherwise the upload will not work. See https://pypi.org/help/\n\n\n\nThis uninstalls your local copy and pulls the package from the cloud to ensure all dependencies and entry points work.\nmake test-install\n\nNote: The Makefile uses the --pre flag, which is required for pip to find .dev versions.\n\n\n\n\nOnly proceed once Step C is successful.\n\nModify Version:\n\n    make patch V=4.0.1\n\nUpload:\n\n    make upload\n\nFinal Warning on Immutability: &gt; [!CAUTION]\n\nOnce 4.0.1 is uploaded to the real PyPI, it is permanent. If you find a bug 5 minutes later, you must increment to 4.0.2.dev1 or 4.0.2 using make patch to upload again.\n\n\n\n\n\nAfter a successful production upload, create a permanent snapshot in your Git history.\nmake tag\nThis extracts the version from your code, creates a git tag (e.g., v4.0.1), and pushes it to the remote repository.\n\n\n\n\n\n\n\n\n\n\n\n\n\nError\nCause\nSolution\n\n\n\n\n400 Bad Request\nVersion already exists\nIncrement version using make patch V=....\n\n\n403 Forbidden\nInvalid Token\nYou likely swapped your Test and Production tokens.\n\n\nLong Description Missing\nMissing README link\nEnsure readme = \"README.md\" is in pyproject.toml.\n\n\nPackage Not Found\nMissing --pre flag\nIf installing a .dev version, you must use pip install --pre.\n\n\n\nExport to Sheets\n\n\n\n\nTo avoid typing tokens manually, create a ~/.pypirc file:\n[distutils]\nindex-servers =\n    pypi\n    testpypi\n\n[pypi]\n  username = __token__\n  password = pypi-YOUR-PROD-TOKEN\n\n[testpypi]\n  repository = https://test.pypi.org/legacy/\n  username = __token__\n  password = pypi-YOUR-TEST-TOKEN\nIMPORTANT: Secure this file with chmod 600 ~/.pypirc.",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Developers"
+    ]
+  },
+  {
+    "objectID": "docs/manual/developers.html#prerequisites",
+    "href": "docs/manual/developers.html#prerequisites",
+    "title": "Developers Manual",
+    "section": "",
+    "text": "Before attempting a release, ensure you have:\n\nAn account and API Token for TestPyPI.\nAn account and API Token for PyPI.\nThe build and twine packages installed:\n\n  pip install --upgrade build twine",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Developers"
+    ]
+  },
+  {
+    "objectID": "docs/manual/developers.html#versioning",
+    "href": "docs/manual/developers.html#versioning",
+    "title": "Developers Manual",
+    "section": "",
+    "text": "To avoid synchronization errors, we use a single version number at\n\ncma_shell/__init__.py.\n\nInstead of opening files manually to change the version, use the following commands to suggest a new version say\nmake version\n\nUpdate to a new version: Decide upon your new number. Let us assume it is 4.0.1.dev1. Now update it in the file with:\n\nmake patch V=4.0.1.dev1\n\n\nCRITICAL: PyPI and TestPyPI are immutable. You cannot overwrite a version once uploaded.\n\nTesting: Set version to a development suffix (e.g., 4.0.1.dev1).\nVerification: Upload and install from TestPyPI.\nProduction: Once verified, remove the suffix (e.g., 4.0.1) and upload to the real PyPI.",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Developers"
+    ]
+  },
+  {
+    "objectID": "docs/manual/developers.html#the-release-workflow",
+    "href": "docs/manual/developers.html#the-release-workflow",
+    "title": "Developers Manual",
+    "section": "",
+    "text": "The Makefile automates the chain of dependencies. Each step ensures the previous one succeeded.\n\n\nmake version             # suggest a new version\nmake patch V=4.0.1.dev1  # Set your test version\nmake check               # clean -&gt; build -&gt; twine check\n\nSuccess: Should see PASSED for both the wheel and source distribution.\n\n\n\n\nTest your .dev version here first to ensure the README renders and the package is intact.\nmake test-upload\nMake sure you have a token from pypi and store it in ~/.pypirc as discussed at the end of this file. Otherwise the upload will not work. See https://pypi.org/help/\n\n\n\nThis uninstalls your local copy and pulls the package from the cloud to ensure all dependencies and entry points work.\nmake test-install\n\nNote: The Makefile uses the --pre flag, which is required for pip to find .dev versions.\n\n\n\n\nOnly proceed once Step C is successful.\n\nModify Version:\n\n    make patch V=4.0.1\n\nUpload:\n\n    make upload\n\nFinal Warning on Immutability: &gt; [!CAUTION]\n\nOnce 4.0.1 is uploaded to the real PyPI, it is permanent. If you find a bug 5 minutes later, you must increment to 4.0.2.dev1 or 4.0.2 using make patch to upload again.\n\n\n\n\n\nAfter a successful production upload, create a permanent snapshot in your Git history.\nmake tag\nThis extracts the version from your code, creates a git tag (e.g., v4.0.1), and pushes it to the remote repository.",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Developers"
+    ]
+  },
+  {
+    "objectID": "docs/manual/developers.html#troubleshooting",
+    "href": "docs/manual/developers.html#troubleshooting",
+    "title": "Developers Manual",
+    "section": "",
+    "text": "Error\nCause\nSolution\n\n\n\n\n400 Bad Request\nVersion already exists\nIncrement version using make patch V=....\n\n\n403 Forbidden\nInvalid Token\nYou likely swapped your Test and Production tokens.\n\n\nLong Description Missing\nMissing README link\nEnsure readme = \"README.md\" is in pyproject.toml.\n\n\nPackage Not Found\nMissing --pre flag\nIf installing a .dev version, you must use pip install --pre.\n\n\n\nExport to Sheets",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Developers"
+    ]
+  },
+  {
+    "objectID": "docs/manual/developers.html#automation-tip",
+    "href": "docs/manual/developers.html#automation-tip",
+    "title": "Developers Manual",
+    "section": "",
+    "text": "To avoid typing tokens manually, create a ~/.pypirc file:\n[distutils]\nindex-servers =\n    pypi\n    testpypi\n\n[pypi]\n  username = __token__\n  password = pypi-YOUR-PROD-TOKEN\n\n[testpypi]\n  repository = https://test.pypi.org/legacy/\n  username = __token__\n  password = pypi-YOUR-TEST-TOKEN\nIMPORTANT: Secure this file with chmod 600 ~/.pypirc.",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Developers"
+    ]
+  },
+  {
+    "objectID": "docs/manual/versions.html",
+    "href": "docs/manual/versions.html",
+    "title": "Versions",
+    "section": "",
+    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev4\n\n\nbeta\n0.0.1",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Versions"
+    ]
+  },
+  {
+    "objectID": "docs/manual/versions.html#components-and-commands",
+    "href": "docs/manual/versions.html#components-and-commands",
+    "title": "Versions",
+    "section": "",
+    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev4\n\n\nbeta\n0.0.1",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Versions"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-git.html",
+    "href": "docs/repos/cloudmesh-ai-git.html",
+    "title": "Git",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 14:41:20\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-git\n\n\n\n1 README\n\n\n2 cloudmesh-ai-git\n\n\n\n3 Command Reference",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Git"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html",
+    "href": "docs/repos/cloudmesh-ai-shell.html",
+    "title": "Shell",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 14:41:20\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#installation",
+    "href": "docs/repos/cloudmesh-ai-shell.html#installation",
+    "title": "Shell",
+    "section": "2.1 Installation",
+    "text": "2.1 Installation\npip install -e .",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#usage",
+    "href": "docs/repos/cloudmesh-ai-shell.html#usage",
+    "title": "Shell",
+    "section": "2.2 Usage",
+    "text": "2.2 Usage\ncms\ncms&gt; banner Hello",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cloudmesh AI Documentation – Cloudmesh AI</title>
+<title>Developers Manual – Cloudmesh AI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,30 +23,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1210bbd7b8c859d7286f13542c93556b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1210bbd7b8c859d7286f13542c93556b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Cloudmesh AI</span>
     </a>
   </div>
@@ -258,15 +293,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs/manual/versions.html"> 
+    <a class="nav-link" href="../../docs/manual/versions.html"> 
 <span class="menu-text">Manual</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs/manual/developers.html"> 
+    <a class="nav-link" href="../../docs/manual/developers.html"> 
 <span class="menu-text">Developers</span></a>
   </li>  
 </ul>
@@ -281,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/manual/versions.html">System Manual</a></li><li class="breadcrumb-item"><a href="../../docs/manual/developers.html">Developers</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -303,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
@@ -318,13 +353,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/manual/versions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/manual/versions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Versions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/manual/developers.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/manual/developers.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Developers</span></a>
   </div>
 </li>
@@ -341,25 +376,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-common.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-common.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Common</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-shell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-shell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Git</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-multipass.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-multipass.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Multipass</span></a>
   </div>
 </li>
@@ -376,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/commands/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/commands/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Index</span></a>
   </div>
 </li>
@@ -392,7 +427,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links"><span class="header-section-number">1</span> Quick Links</a></li>
+  <li><a href="#developer-guide-releasing-cloudmesh-cma" id="toc-developer-guide-releasing-cloudmesh-cma" class="nav-link active" data-scroll-target="#developer-guide-releasing-cloudmesh-cma"><span class="header-section-number">1</span> Developer Guide: Releasing Cloudmesh CMA</a>
+  <ul class="collapse">
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites"><span class="header-section-number">1.1</span> 1. Prerequisites</a></li>
+  <li><a href="#versioning" id="toc-versioning" class="nav-link" data-scroll-target="#versioning"><span class="header-section-number">1.2</span> 2. Versioning</a>
+  <ul class="collapse">
+  <li><a href="#the-appendix-strategy-.devn" id="toc-the-appendix-strategy-.devn" class="nav-link" data-scroll-target="#the-appendix-strategy-.devn"><span class="header-section-number">1.2.1</span> The Appendix Strategy (<code>.devN</code>)</a></li>
+  </ul></li>
+  <li><a href="#the-release-workflow" id="toc-the-release-workflow" class="nav-link" data-scroll-target="#the-release-workflow"><span class="header-section-number">1.3</span> 3. The Release Workflow</a>
+  <ul class="collapse">
+  <li><a href="#step-a-build-and-validate" id="toc-step-a-build-and-validate" class="nav-link" data-scroll-target="#step-a-build-and-validate"><span class="header-section-number">1.3.1</span> Step A: Build and Validate</a></li>
+  <li><a href="#step-b-upload-to-testpypi-the-sandbox" id="toc-step-b-upload-to-testpypi-the-sandbox" class="nav-link" data-scroll-target="#step-b-upload-to-testpypi-the-sandbox"><span class="header-section-number">1.3.2</span> Step B: Upload to TestPyPI (The Sandbox)</a></li>
+  <li><a href="#step-c-verify-the-test-install" id="toc-step-c-verify-the-test-install" class="nav-link" data-scroll-target="#step-c-verify-the-test-install"><span class="header-section-number">1.3.3</span> Step C: Verify the Test Install</a></li>
+  <li><a href="#step-d-promote-to-production-the-real-pypi" id="toc-step-d-promote-to-production-the-real-pypi" class="nav-link" data-scroll-target="#step-d-promote-to-production-the-real-pypi"><span class="header-section-number">1.3.4</span> Step D: Promote to Production (The Real PyPI)</a></li>
+  <li><a href="#step-e-git-tagging" id="toc-step-e-git-tagging" class="nav-link" data-scroll-target="#step-e-git-tagging"><span class="header-section-number">1.3.5</span> Step E: Git Tagging</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">1.4</span> 4. Troubleshooting</a></li>
+  <li><a href="#automation-tip" id="toc-automation-tip" class="nav-link" data-scroll-target="#automation-tip"><span class="header-section-number">1.5</span> 5. Automation Tip</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -400,9 +452,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/manual/versions.html">System Manual</a></li><li class="breadcrumb-item"><a href="../../docs/manual/developers.html">Developers</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Cloudmesh AI Documentation</h1>
+<h1 class="title">Developers Manual</h1>
 </div>
 
 
@@ -419,30 +471,156 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the <strong>Cloudmesh AI</strong> ecosystem. We provide tools for seamless AI orchestration on HPC environments, including NVIDIA DGX Stations and A100/Blackwell clusters.</p>
-<p>Welcome to the <strong>Cloudmesh AI</strong> Documentation Hub. This site provides a centralized view of our high-performance computing tools and AI orchestration shells.</p>
-<section id="quick-links" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="quick-links"><span class="header-section-number">1</span> Quick Links</h2>
+<section id="developer-guide-releasing-cloudmesh-cma" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Developer Guide: Releasing Cloudmesh CMA</h1>
+<p>This document outlines the workflow for building, validating, and publishing new versions of <code>cloudmesh-cma</code>.</p>
+<section id="prerequisites" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">1.1</span> 1. Prerequisites</h2>
+<p>Before attempting a release, ensure you have:</p>
 <ul>
-<li><a href="./docs/manual/versions.html">System Manual</a></li>
-<li><a href="./docs/repos/cloudmesh-ai-shell.html">Project Repositories</a></li>
-<li><a href="./docs/manual/structure.html">Project Structure</a></li>
+<li>An account and API Token for <a href="https://test.pypi.org/">TestPyPI</a>.</li>
+<li>An account and API Token for <a href="https://pypi.org/">PyPI</a>.</li>
+<li>The <code>build</code> and <code>twine</code> packages installed:</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This site is automatically updated from our core repositories using <code>make www</code>.</p>
-</div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="ex">pip</span> install <span class="at">--upgrade</span> build twine</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="versioning" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="versioning"><span class="header-section-number">1.2</span> 2. Versioning</h2>
+<p>To avoid synchronization errors, we use a single version number at</p>
+<ul>
+<li><code>cma_shell/__init__.py</code>.</li>
+</ul>
+<p>Instead of opening files manually to change the version, use the following commands to suggest a new version say</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> version</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><strong>Update to a new version:</strong> Decide upon your new number. Let us assume it is <code>4.0.1.dev1</code>. Now update it in the file with:</li>
+</ul>
+<p><code>make patch V=4.0.1.dev1</code></p>
+<section id="the-appendix-strategy-.devn" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="the-appendix-strategy-.devn"><span class="header-section-number">1.2.1</span> The Appendix Strategy (<code>.devN</code>)</h3>
+<p><strong>CRITICAL:</strong> PyPI and TestPyPI are <strong>immutable</strong>. You cannot overwrite a version once uploaded.</p>
+<ol type="1">
+<li><strong>Testing:</strong> Set version to a development suffix (e.g., <code>4.0.1.dev1</code>).</li>
+<li><strong>Verification:</strong> Upload and install from TestPyPI.</li>
+<li><strong>Production:</strong> Once verified, remove the suffix (e.g., <code>4.0.1</code>) and upload to the real PyPI.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="the-release-workflow" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-release-workflow"><span class="header-section-number">1.3</span> 3. The Release Workflow</h2>
+<p>The <code>Makefile</code> automates the chain of dependencies. Each step ensures the previous one succeeded.</p>
+<section id="step-a-build-and-validate" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="step-a-build-and-validate"><span class="header-section-number">1.3.1</span> Step A: Build and Validate</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> version             <span class="co"># suggest a new version</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> patch V=4.0.1.dev1  <span class="co"># Set your test version</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> check               <span class="co"># clean -&gt; build -&gt; twine check</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><strong>Success:</strong> Should see <code>PASSED</code> for both the wheel and source distribution.</li>
+</ul>
+</section>
+<section id="step-b-upload-to-testpypi-the-sandbox" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="step-b-upload-to-testpypi-the-sandbox"><span class="header-section-number">1.3.2</span> Step B: Upload to TestPyPI (The Sandbox)</h3>
+<p>Test your <code>.dev</code> version here first to ensure the README renders and the package is intact.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> test-upload</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Make sure you have a token from pypi and store it in <code>~/.pypirc</code> as discussed at the end of this file. Otherwise the upload will not work. See <a href="https://pypi.org/help/" class="uri">https://pypi.org/help/</a></p>
+</section>
+<section id="step-c-verify-the-test-install" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="step-c-verify-the-test-install"><span class="header-section-number">1.3.3</span> Step C: Verify the Test Install</h3>
+<p>This uninstalls your local copy and pulls the package from the cloud to ensure all dependencies and entry points work.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> test-install</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><strong>Note:</strong> The <code>Makefile</code> uses the <code>--pre</code> flag, which is <strong>required</strong> for pip to find <code>.dev</code> versions.</li>
+</ul>
+</section>
+<section id="step-d-promote-to-production-the-real-pypi" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="step-d-promote-to-production-the-real-pypi"><span class="header-section-number">1.3.4</span> Step D: Promote to Production (The Real PyPI)</h3>
+<p><strong>Only proceed once Step C is successful.</strong></p>
+<ol type="1">
+<li><strong>Modify Version:</strong></li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">make</span> patch V=4.0.1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="2" type="1">
+<li><strong>Upload:</strong></li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">make</span> upload</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li><p><strong>Final Warning on Immutability:</strong> &gt; [!CAUTION]</p>
+<blockquote class="blockquote">
+<p>Once <code>4.0.1</code> is uploaded to the real PyPI, it is <strong>permanent</strong>. If you find a bug 5 minutes later, you <strong>must</strong> increment to <code>4.0.2.dev1</code> or <code>4.0.2</code> using <code>make patch</code> to upload again.</p>
+</blockquote></li>
+</ol>
+</section>
+<section id="step-e-git-tagging" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="step-e-git-tagging"><span class="header-section-number">1.3.5</span> Step E: Git Tagging</h3>
+<p>After a successful production upload, create a permanent snapshot in your Git history.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> tag</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><em>This extracts the version from your code, creates a git tag (e.g., <code>v4.0.1</code>), and pushes it to the remote repository.</em></p>
+<hr>
+</section>
+</section>
+<section id="troubleshooting" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">1.4</span> 4. Troubleshooting</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Error</th>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>400 Bad Request</strong></td>
+<td>Version already exists</td>
+<td>Increment version using <code>make patch V=...</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>403 Forbidden</strong></td>
+<td>Invalid Token</td>
+<td>You likely swapped your Test and Production tokens.</td>
+</tr>
+<tr class="odd">
+<td><strong>Long Description Missing</strong></td>
+<td>Missing README link</td>
+<td>Ensure <code>readme = "README.md"</code> is in <code>pyproject.toml</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Not Found</strong></td>
+<td>Missing <code>--pre</code> flag</td>
+<td>If installing a <code>.dev</code> version, you must use <code>pip install --pre</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Export to Sheets</p>
+<hr>
+</section>
+<section id="automation-tip" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="automation-tip"><span class="header-section-number">1.5</span> 5. Automation Tip</h2>
+<p>To avoid typing tokens manually, create a <code>~/.pypirc</code> file:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[distutils]</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dt">index-servers</span> <span class="op">=</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pypi</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">testpypi</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="kw">[pypi]</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">username</span> <span class="op">=</span> <span class="dt">__token__</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">password</span> <span class="op">=</span> <span class="dt">pypi-YOUR-PROD-TOKEN</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="kw">[testpypi]</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">repository</span> <span class="op">=</span> <span class="dt">https</span><span class="er">://</span><span class="dt">test.pypi.org</span><span class="er">/</span><span class="dt">legacy</span><span class="er">/</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">username</span> <span class="op">=</span> <span class="dt">__token__</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="dt">password</span> <span class="op">=</span> <span class="dt">pypi-YOUR-TEST-TOKEN</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>IMPORTANT</strong>: <em>Secure this file with <code>chmod 600 ~/.pypirc</code>.</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

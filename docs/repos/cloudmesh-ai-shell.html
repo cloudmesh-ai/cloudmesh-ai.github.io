@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cloudmesh AI Documentation – Cloudmesh AI</title>
+<title>Shell – Cloudmesh AI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,30 +23,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1210bbd7b8c859d7286f13542c93556b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1210bbd7b8c859d7286f13542c93556b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-763170507901135a2a0113b53e723e43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Cloudmesh AI</span>
     </a>
   </div>
@@ -258,11 +293,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs/manual/versions.html"> 
+    <a class="nav-link" href="../../docs/manual/versions.html"> 
 <span class="menu-text">Manual</span></a>
   </li>  
 </ul>
@@ -277,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/repos/cloudmesh-ai-common.html">Components</a></li><li class="breadcrumb-item"><a href="../../docs/repos/cloudmesh-ai-shell.html">AI Shell</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -299,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
@@ -314,25 +349,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-common.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-common.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Common</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-shell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-shell.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">AI Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Git</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/repos/cloudmesh-ai-multipass.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/repos/cloudmesh-ai-multipass.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Multipass</span></a>
   </div>
 </li>
@@ -349,13 +384,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/manual/versions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/manual/versions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Versions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docs/commands/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/commands/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Index</span></a>
   </div>
 </li>
@@ -371,7 +406,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links"><span class="header-section-number">1</span> Quick Links</a></li>
+  <li><a href="#readme" id="toc-readme" class="nav-link active" data-scroll-target="#readme"><span class="header-section-number">1</span> README</a></li>
+  <li><a href="#cloudmesh-cms" id="toc-cloudmesh-cms" class="nav-link" data-scroll-target="#cloudmesh-cms"><span class="header-section-number">2</span> Cloudmesh CMS</a>
+  <ul class="collapse">
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation"><span class="header-section-number">2.1</span> Installation</a></li>
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage"><span class="header-section-number">2.2</span> Usage</a></li>
+  </ul></li>
+  <li><a href="#command-reference" id="toc-command-reference" class="nav-link" data-scroll-target="#command-reference"><span class="header-section-number">3</span> Command Reference</a>
+  <ul class="collapse">
+  <li><a href="#command-banner" id="toc-command-banner" class="nav-link" data-scroll-target="#command-banner"><span class="header-section-number">3.1</span> <code>banner</code></a></li>
+  <li><a href="#command-clear" id="toc-command-clear" class="nav-link" data-scroll-target="#command-clear"><span class="header-section-number">3.2</span> <code>clear</code></a></li>
+  <li><a href="#command-diagnostic" id="toc-command-diagnostic" class="nav-link" data-scroll-target="#command-diagnostic"><span class="header-section-number">3.3</span> <code>diagnostic</code></a></li>
+  <li><a href="#command-man" id="toc-command-man" class="nav-link" data-scroll-target="#command-man"><span class="header-section-number">3.4</span> <code>man</code></a></li>
+  <li><a href="#command-markdown" id="toc-command-markdown" class="nav-link" data-scroll-target="#command-markdown"><span class="header-section-number">3.5</span> <code>markdown</code></a></li>
+  <li><a href="#command-pause" id="toc-command-pause" class="nav-link" data-scroll-target="#command-pause"><span class="header-section-number">3.6</span> <code>pause</code></a></li>
+  <li><a href="#command-python_prg" id="toc-command-python_prg" class="nav-link" data-scroll-target="#command-python_prg"><span class="header-section-number">3.7</span> <code>python_prg</code></a></li>
+  <li><a href="#command-shell" id="toc-command-shell" class="nav-link" data-scroll-target="#command-shell"><span class="header-section-number">3.8</span> <code>shell</code></a></li>
+  <li><a href="#command-sysinfo" id="toc-command-sysinfo" class="nav-link" data-scroll-target="#command-sysinfo"><span class="header-section-number">3.9</span> <code>sysinfo</code></a></li>
+  <li><a href="#command-tree" id="toc-command-tree" class="nav-link" data-scroll-target="#command-tree"><span class="header-section-number">3.10</span> <code>tree</code></a></li>
+  <li><a href="#command-version" id="toc-command-version" class="nav-link" data-scroll-target="#command-version"><span class="header-section-number">3.11</span> <code>version</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -379,9 +433,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/repos/cloudmesh-ai-common.html">Components</a></li><li class="breadcrumb-item"><a href="../../docs/repos/cloudmesh-ai-shell.html">AI Shell</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Cloudmesh AI Documentation</h1>
+<h1 class="title">Shell</h1>
 </div>
 
 
@@ -398,30 +452,168 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the <strong>Cloudmesh AI</strong> ecosystem. We provide tools for seamless AI orchestration on HPC environments, including NVIDIA DGX Stations and A100/Blackwell clusters.</p>
-<p>Welcome to the <strong>Cloudmesh AI</strong> Documentation Hub. This site provides a centralized view of our high-performance computing tools and AI orchestration shells.</p>
-<section id="quick-links" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="quick-links"><span class="header-section-number">1</span> Quick Links</h2>
-<ul>
-<li><a href="./docs/manual/versions.html">System Manual</a></li>
-<li><a href="./docs/repos/cloudmesh-ai-shell.html">Project Repositories</a></li>
-<li><a href="./docs/manual/structure.html">Project Structure</a></li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Note</span>Github <span style="float: right; font-weight: normal; font-size: 0.85em;">Version: 0.0.1 &nbsp;&nbsp; Date: 2026-04-05 11:55:40</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This site is automatically updated from our core repositories using <code>make www</code>.</p>
+<p><strong>Source Code:</strong> <a href="https://github.com/cloudmesh-ai/cloudmesh-ai-shell">https://github.com/cloudmesh-ai/cloudmesh-ai-shell</a></p>
 </div>
 </div>
+<section id="readme" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> README</h1>
+</section>
+<section id="cloudmesh-cms" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Cloudmesh CMS</h1>
+<p>Pluggable shell environment.</p>
+<section id="installation" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">2.1</span> Installation</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="usage" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="usage"><span class="header-section-number">2.2</span> Usage</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">cms</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">cms</span><span class="op">&gt;</span> banner Hello</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="command-reference" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Command Reference</h1>
+<section id="command-banner" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="command-banner"><span class="header-section-number">3.1</span> <code>banner</code></h2>
+<pre class="text"><code>Usage:
+    banner [-c CHAR] [-n WIDTH] [-i INDENT] [-r COLOR] TEXT...
+
+Options:
+    -c CHAR    The character to use [default: #]
+    -n WIDTH   The width of the banner [default: 70]
+    -i INDENT  The indentation [default: 0]
+    -r COLOR   The color (RED, GREEN, BLUE) [default: NORMAL]
+
+Description:
+    Prints a banner from a one line text message.</code></pre>
+</section>
+<section id="command-clear" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="command-clear"><span class="header-section-number">3.2</span> <code>clear</code></h2>
+<pre class="text"><code>Usage:
+    clear
+
+Description:
+    Clears the screen.</code></pre>
+</section>
+<section id="command-diagnostic" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="command-diagnostic"><span class="header-section-number">3.3</span> <code>diagnostic</code></h2>
+<pre class="text"><code>*** No help on diagnostic</code></pre>
+</section>
+<section id="command-man" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="command-man"><span class="header-section-number">3.4</span> <code>man</code></h2>
+<pre class="text"><code>Usage:
+    man [-f] [--format=FORMAT] [COMMAND]
+
+Description:
+    Generates a manual. If no command is provided, it lists all 
+    discovered plugins and their full manual pages.
+
+Options:
+    -f               Show the file path for each plugin (text mode only).
+    --format=FORMAT  Output format: text, md, rst [default: text].</code></pre>
+</section>
+<section id="command-markdown" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="command-markdown"><span class="header-section-number">3.5</span> <code>markdown</code></h2>
+<pre class="text"><code>Usage:
+    markdown fix gemini &lt;filename&gt;
+
+Description:
+    Surgically removes Gemini 'Bash' labels, removes leading 
+    indentation for code blocks, and wraps naked commands.</code></pre>
+</section>
+<section id="command-pause" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="command-pause"><span class="header-section-number">3.6</span> <code>pause</code></h2>
+<pre class="text"><code>Usage:
+    pause TIME
+
+Description:
+    Pauses the shell execution for a specified duration.
+    TIME can be a number (seconds) or include a unit (s, m, h).
+
+Examples:
+    pause 10
+    pause 5s
+    pause 2m</code></pre>
+</section>
+<section id="command-python_prg" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="command-python_prg"><span class="header-section-number">3.7</span> <code>python_prg</code></h2>
+<pre class="text"><code>*** No help on python_prg</code></pre>
+</section>
+<section id="command-shell" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="command-shell"><span class="header-section-number">3.8</span> <code>shell</code></h2>
+<pre class="text"><code>Usage:
+    shell -f FILE
+    shell [COMMAND...]
+
+Description:
+    Executes a command or a script file in the system shell.
+
+Options:
+    -f FILE  Pass a script file to be executed by the shell.
+
+Arguments:
+    COMMAND  The system command to execute.</code></pre>
+</section>
+<section id="command-sysinfo" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="command-sysinfo"><span class="header-section-number">3.9</span> <code>sysinfo</code></h2>
+<pre class="text"><code>Usage:
+    sysinfo [-a] [-v] [-t] [-m] [-d] [-b] [-n] [-u] [-l] [-g] [-c]
+
+Description:
+    Prints hardware and system information.
+
+Options:
+    -a        Show all information
+    -v        Verbose topology view
+    -t        Thread/Core summary
+    -m        Display memory usage (RAM/Swap)
+    -d        Display disk usage
+    -b        Display battery status
+    -n        Display network interfaces (IPs)
+    -u        Display system uptime
+    -l        Display current CPU load
+    -g        Display GPU information
+    -c        Display CPU/GPU temperatures (Celsius)</code></pre>
+</section>
+<section id="command-tree" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="command-tree"><span class="header-section-number">3.10</span> <code>tree</code></h2>
+<pre class="text"><code>Usage:
+    tree [-c] [PATH]
+
+Description:
+    Prints a visual directory tree of relevant code, 
+    respecting .gitignore rules and hiding meta-files.
+    Use -c to also print the contents of each file.
+
+Options:
+    -c        Cat/Print the content of each file found.
+    PATH      The directory to start from [default: .].</code></pre>
+</section>
+<section id="command-version" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="command-version"><span class="header-section-number">3.11</span> <code>version</code></h2>
+<pre class="text"><code>Usage:
+    version [-f] [--format=FORMAT]
+
+Description:
+    Lists discovered plugins and versions in a formatted table.
+
+Options:
+    -f                Show the file path for each plugin.
+    --format=FORMAT   Output format: table, md, rst, json [default: table].</code></pre>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

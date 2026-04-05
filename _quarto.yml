@@ -1,30 +1,67 @@
 project:
   type: website
   output-dir: _site
+  # Explicitly define the render targets for parallel processing
+  render:
+    - "*.qmd"
+    - "docs/**/*.qmd"
 
 website:
   title: "Cloudmesh AI"
-  description: "High-Performance Computing and AI Orchestration"
+  
   navbar:
+    background: "#f8f9fa"
+    collapse: true
     left:
       - href: index.qmd
         text: Home
-      - href: shell/index.qmd
-        text: AI Shell
-      - href: benchmarks/index.qmd
-        text: Benchmarks
+      - href: docs/manual/versions.qmd
+        text: Manual
+
   sidebar:
-    - title: "Getting Started"
+    - id: main-sidebar
+      title: "Navigation"
+      style: "docked"
+      search: true
       contents:
-        - index.qmd
-        - installation.qmd
-    - title: "Components"
-      contents:
-        - shell/index.qmd
-        - shell/commands.qmd
+        - href: index.qmd
+          text: Welcome
+        - section: "Components"
+          contents:
+            - text: "AI Common"
+              file: docs/repos/cloudmesh-ai-common.qmd
+            - text: "AI Shell"
+              file: docs/repos/cloudmesh-ai-shell.qmd
+            - text: "AI Git"
+              file: docs/repos/cloudmesh-ai-git.qmd
+            - text: "AI Multipass"
+              file: docs/repos/cloudmesh-ai-multipass.qmd
+        - section: "Commands"
+          contents:
+            - text: "Versions"
+              file: docs/manual/versions.qmd
+            - text: "Index"
+              file: docs/commands/index.qmd
+
+# --- PARALLEL INTEGRATION START ---
+execute:
+  cache: true      # Cache individual cell outputs
+  freeze: auto    # Only re-render files that have changed
+  daemon: 0       # Keep kernels alive to avoid startup overhead
+# --- PARALLEL INTEGRATION END ---
 
 format:
   html:
-    theme: cosmo
-    code-fold: true
+    theme: 
+      light: flatly
+      dark: darkly
+    code-copy: true
     toc: true
+    toc-location: right
+    number-sections: true
+
+project-ignore:
+  - "ENV14/"
+  - "bin/"
+  - "build/"
+  - "dist/"

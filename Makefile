@@ -1,0 +1,2 @@
+all:
+	quarto preview

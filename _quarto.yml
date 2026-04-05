@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Cloudmesh AI"
+  description: "High-Performance Computing and AI Orchestration"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: shell/index.qmd
+        text: AI Shell
+      - href: benchmarks/index.qmd
+        text: Benchmarks
+  sidebar:
+    - title: "Getting Started"
+      contents:
+        - index.qmd
+        - installation.qmd
+    - title: "Components"
+      contents:
+        - shell/index.qmd
+        - shell/commands.qmd
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+    toc: true

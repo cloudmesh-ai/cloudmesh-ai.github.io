@@ -4,13 +4,333 @@
     "href": "index.html",
     "title": "Cloudmesh AI Documentation",
     "section": "",
-    "text": "Welcome to the Cloudmesh AI ecosystem. We provide tools for seamless AI orchestration on HPC environments, including NVIDIA DGX Stations and A100/Blackwell clusters."
+    "text": "Welcome to the Cloudmesh AI ecosystem. We provide tools for seamless AI orchestration on HPC environments, including NVIDIA DGX Stations and A100/Blackwell clusters.\nWelcome to the Cloudmesh AI Documentation Hub. This site provides a centralized view of our high-performance computing tools and AI orchestration shells.",
+    "crumbs": [
+      "Home",
+      "Welcome"
+    ]
   },
   {
-    "objectID": "index.html#core-projects",
-    "href": "index.html#core-projects",
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
     "title": "Cloudmesh AI Documentation",
-    "section": "Core Projects",
-    "text": "Core Projects\n\nAI Shell: A specialized CLI for managing LLMs and RAG workflows.\n[Tracker Native]: Mobile-first avian monitoring and triangulation.\n[Benchmarks]: Comparative analysis of YOLO models and RAG performance.\n\n\n[!TIP] Use pip install cloudmesh-cma to get started with the core shell."
+    "section": "1 Quick Links",
+    "text": "1 Quick Links\n\nSystem Manual\nProject Repositories\nProject Structure\n\n\n\n\n\n\n\nTip\n\n\n\nThis site is automatically updated from our core repositories using make www.",
+    "crumbs": [
+      "Home",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "docs/manual/structure.html",
+    "href": "docs/manual/structure.html",
+    "title": "Structure",
+    "section": "",
+    "text": "Project Tree: /Users/grey/Desktop/class/cloudmesh-ai/cloudmesh-ai.github.io\u001b[94m\u001b[0m\n============================================================\u001b[94m\u001b[0m\n├── .github\n│   └── workflows\n│       └── publish.yml\n├── .gitignore\n├── Makefile\n├── _quarto.yml\n├── _site\n│   ├── docs\n│   │   ├── commands\n│   │   │   └── shell.html\n│   │   ├── manual\n│   │   │   ├── structure.html\n│   │   │   └── versions.html\n│   │   └── repos\n│   │       ├── cloudmesh-ai-common.html\n│   │       ├── cloudmesh-ai-git.html\n│   │       ├── cloudmesh-ai-multipass.html\n│   │       └── cloudmesh-ai-shell.html\n│   ├── index.html\n│   ├── search.json\n│   └── site_libs\n│       ├── bootstrap\n│       │   ├── bootstrap-763170507901135a2a0113b53e723e43.min.css\n│       │   ├── bootstrap-dark-1210bbd7b8c859d7286f13542c93556b.min.css\n│       │   ├── bootstrap-icons.css\n│       │   ├── bootstrap-icons.woff\n│       │   └── bootstrap.min.js\n│       ├── clipboard\n│       │   └── clipboard.min.js\n│       ├── quarto-html\n│       │   ├── anchor.min.js\n│       │   ├── popper.min.js\n│       │   ├── quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css\n│       │   ├── quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css\n│       │   ├── quarto.js\n│       │   ├── tabsets\n│       │   │   └── tabsets.js\n│       │   ├── tippy.css\n│       │   └── tippy.umd.min.js\n│       ├── quarto-nav\n│       │   ├── headroom.min.js\n│       │   └── quarto-nav.js\n│       └── quarto-search\n│           ├── autocomplete.umd.js\n│           ├── fuse.min.js\n│           └── quarto-search.js\n├── bin\n│   └── make_www.py\n├── docs\n│   ├── commands\n│   │   └── shell.qmd\n│   ├── manual\n│   │   ├── structure.qmd\n│   │   └── versions.qmd\n│   └── repos\n│       ├── cloudmesh-ai-common.qmd\n│       ├── cloudmesh-ai-git.qmd\n│       ├── cloudmesh-ai-multipass.qmd\n│       └── cloudmesh-ai-shell.qmd\n└── index.qmd",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Project Structure"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-common.html",
+    "href": "docs/repos/cloudmesh-ai-common.html",
+    "title": "Common",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 11:24:51\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-common\n\n\n\n1 README\n\n\n2 cloudmesh-common\nCommon libraries\n\n\n\n3 Command Documentation\nNo specific commands found within this component’s source.",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Common"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html",
+    "href": "docs/repos/cloudmesh-ai-multipass.html",
+    "title": "Multipass",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 11:24:52\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-multipass",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html#installation",
+    "href": "docs/repos/cloudmesh-ai-multipass.html#installation",
+    "title": "Multipass",
+    "section": "2.1 Installation",
+    "text": "2.1 Installation\npip install cloudmesh-multipass\ncms help multipass",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html#last-verified-install-test",
+    "href": "docs/repos/cloudmesh-ai-multipass.html#last-verified-install-test",
+    "title": "Multipass",
+    "section": "2.2 Last verified install test",
+    "text": "2.2 Last verified install test\ncms multipass deploy * Ubuntu 22.04, Dec 2023Command multipass",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-multipass.html#manual-page",
+    "href": "docs/repos/cloudmesh-ai-multipass.html#manual-page",
+    "title": "Multipass",
+    "section": "2.3 Manual Page",
+    "text": "2.3 Manual Page\n\nCommand multipass\n=================\n\n::\n\n  Usage:\n        multipass deploy [--dryrun]\n        multipass images [--output=OUTPUT] [--refresh] [--purge] [--dryrun]\n        multipass list [--output=OUTPUT] [--dryrun]\n        multipass create NAMES [--image=IMAGE]\n                               [--size=SIZE]\n                               [--memory=MEMORY]\n                               [--cpus=CPUS]\n                               [--disk=DISK]\n                               [--dryrun]\n                               [--cloudinit=FILE_OR_URL]\n                               [--network=NETWORK]\n                               [--bridged]\n                               [--mount=SOURCE]\n                               [--timeout=TIMEOUT]\n        multipass delete NAMES [--output=OUTPUT][--dryrun]\n        multipass destroy NAMES [--output=OUTPUT][--dryrun]\n        multipass shell NAMES [--dryrun]\n        multipass run COMMAND NAMES [--output=OUTPUT] [--dryrun]\n        multipass info NAMES [--output=OUTPUT] [--dryrun]\n        multipass suspend NAMES [--output=OUTPUT] [--dryrun]\n        multipass resume NAMES [--output=OUTPUT] [--dryrun]\n        multipass start NAMES [--output=OUTPUT] [--dryrun]\n        multipass stop NAMES [--output=OUTPUT] [--dryrun]\n        multipass reboot NAMES [--output=OUTPUT] [--dryrun]\n        multipass mount SOURCE DESTINATION [--dryrun]\n        multipass umount SOURCE [--dryrun]\n        multipass transfer SOURCE DESTINATION [--dryrun]\n        multipass set key=VALUE [--dryrun]\n        multipass get [key] [--dryrun]\n        multipass deploy [--dryrun]\n        multipass rename NAMES [--dryrun]\n        multipass test\n        multipass vm defaults [--output=OUTPUT]\n        multipass version\n\n  Interface to multipass\n\n  Options:\n       --output=OUTPUT    the output format [default: table]. Other\n                          values are yaml, csv and json.\n\n       --image=IMAGE      the image name to be used to create a VM.\n\n       --cpus=CPUS        Number of CPUs to allocate.\n                          Minimum: 1, default: 1.\n\n       --size=SIZE        Disk space to allocate. Positive integers,\n                          in bytes, or with K, M, G suffix.\n                          Minimum: 512M, default: 5G.\n\n       --mem=MEMORY       Amount of memory to allocate. Positive\n                          integers, in bytes, or with K, M, G suffix.\n                          Minimum: 128M, default: 1G.\n\n       --cloudinit=FILE  Path to a user-data cloudinit configuration\n\n  Arguments:\n      NAMES   the names of the virtual machine\n\n  Description:\n\n      The NAMES can be a parameterized hostname such as\n\n        red[0-1,5] = red0,red1,red5\n\n  Commands:\n\n    First you can see the supported multipass images with\n\n        cms multipass images\n\n    Create and launch a new vm using\n\n        cms multipass create NAMES\n\n        Optionally you can provide image name, size, memory,\n        number of cpus to create an instance.\n\n    Start one or multiple multipass vms with\n\n        cms multipass start NAMES\n\n    Stop one or multiple vms with\n\n        cms multipass stop NAMES\n\n    Gets all multipass internal key values with\n\n      cms multipass get\n\n    Gets a specific internal key.\n\n      cms multipass get KEY\n\n      Known keys\n\n          client.gui.autostart\n          client.primary-name\n          local.driver\n\n          are there more?\n\n    Reboot (stop and then start) vms with\n\n        cms multipass reboot NAMES\n\n    Delete one of multiple vms without purging with\n\n        cms multipass delete NAMES\n\n    Destory multipass vms (delete and purge) with\n\n        cms multipass destroy NAMES\n\n        Caution: Once destroyed everything in vm will be deleted\n                 and cannot be recovered.\n\n    WHEN YOU IMPLEMENT A FUNCTION INCLUDE MINIMAL\n      DOCUMENTATION HERE",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Multipass"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html",
+    "href": "docs/repos/cloudmesh-ai-shell.html",
+    "title": "Shell",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 11:24:51\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#installation",
+    "href": "docs/repos/cloudmesh-ai-shell.html#installation",
+    "title": "Shell",
+    "section": "2.1 Installation",
+    "text": "2.1 Installation\npip install -e .",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#usage",
+    "href": "docs/repos/cloudmesh-ai-shell.html#usage",
+    "title": "Shell",
+    "section": "2.2 Usage",
+    "text": "2.2 Usage\ncms\ncms&gt; banner Hello",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#cma-core",
+    "href": "docs/repos/cloudmesh-ai-shell.html#cma-core",
+    "title": "Shell",
+    "section": "3.1 cma (core)",
+    "text": "3.1 cma (core)\n*** No help on cma (core)",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#banner",
+    "href": "docs/repos/cloudmesh-ai-shell.html#banner",
+    "title": "Shell",
+    "section": "3.2 banner",
+    "text": "3.2 banner\nUsage:\n    banner [-c CHAR] [-n WIDTH] [-i INDENT] [-r COLOR] TEXT...\n\nOptions:\n    -c CHAR    The character to use [default: #]\n    -n WIDTH   The width of the banner [default: 70]\n    -i INDENT  The indentation [default: 0]\n    -r COLOR   The color (RED, GREEN, BLUE) [default: NORMAL]\n\nDescription:\n    Prints a banner from a one line text message.",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#clear",
+    "href": "docs/repos/cloudmesh-ai-shell.html#clear",
+    "title": "Shell",
+    "section": "3.3 clear",
+    "text": "3.3 clear\nUsage:\n    clear\n\nDescription:\n    Clears the screen.",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#diagnostic",
+    "href": "docs/repos/cloudmesh-ai-shell.html#diagnostic",
+    "title": "Shell",
+    "section": "3.4 diagnostic",
+    "text": "3.4 diagnostic\n*** No help on diagnostic",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#man",
+    "href": "docs/repos/cloudmesh-ai-shell.html#man",
+    "title": "Shell",
+    "section": "3.5 man",
+    "text": "3.5 man\nUsage:\n    man [-f] [--format=FORMAT] [COMMAND]\n\nDescription:\n    Generates a manual. If no command is provided, it lists all \n    discovered plugins and their full manual pages.\n\nOptions:\n    -f               Show the file path for each plugin (text mode only).\n    --format=FORMAT  Output format: text, md, rst [default: text].",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#markdown",
+    "href": "docs/repos/cloudmesh-ai-shell.html#markdown",
+    "title": "Shell",
+    "section": "3.6 markdown",
+    "text": "3.6 markdown\nUsage:\n    markdown fix gemini &lt;filename&gt;\n\nDescription:\n    Surgically removes Gemini 'Bash' labels, removes leading \n    indentation for code blocks, and wraps naked commands.",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#pause",
+    "href": "docs/repos/cloudmesh-ai-shell.html#pause",
+    "title": "Shell",
+    "section": "3.7 pause",
+    "text": "3.7 pause\nUsage:\n    pause TIME\n\nDescription:\n    Pauses the shell execution for a specified duration.\n    TIME can be a number (seconds) or include a unit (s, m, h).\n\nExamples:\n    pause 10\n    pause 5s\n    pause 2m",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#python_prg",
+    "href": "docs/repos/cloudmesh-ai-shell.html#python_prg",
+    "title": "Shell",
+    "section": "3.8 python_prg",
+    "text": "3.8 python_prg\n*** No help on python_prg",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#shell",
+    "href": "docs/repos/cloudmesh-ai-shell.html#shell",
+    "title": "Shell",
+    "section": "3.9 shell",
+    "text": "3.9 shell\nUsage:\n    shell -f FILE\n    shell [COMMAND...]\n\nDescription:\n    Executes a command or a script file in the system shell.\n\nOptions:\n    -f FILE  Pass a script file to be executed by the shell.\n\nArguments:\n    COMMAND  The system command to execute.",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#sysinfo",
+    "href": "docs/repos/cloudmesh-ai-shell.html#sysinfo",
+    "title": "Shell",
+    "section": "3.10 sysinfo",
+    "text": "3.10 sysinfo\nUsage:\n    sysinfo [-a] [-v] [-t] [-m] [-d] [-b] [-n] [-u] [-l] [-g] [-c]\n\nDescription:\n    Prints hardware and system information.\n\nOptions:\n    -a        Show all information\n    -v        Verbose topology view\n    -t        Thread/Core summary\n    -m        Display memory usage (RAM/Swap)\n    -d        Display disk usage\n    -b        Display battery status\n    -n        Display network interfaces (IPs)\n    -u        Display system uptime\n    -l        Display current CPU load\n    -g        Display GPU information\n    -c        Display CPU/GPU temperatures (Celsius)",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#tree",
+    "href": "docs/repos/cloudmesh-ai-shell.html#tree",
+    "title": "Shell",
+    "section": "3.11 tree",
+    "text": "3.11 tree\nUsage:\n    tree [-c] [PATH]\n\nDescription:\n    Prints a visual directory tree of relevant code, \n    respecting .gitignore rules and hiding meta-files.\n    Use -c to also print the contents of each file.\n\nOptions:\n    -c        Cat/Print the content of each file found.\n    PATH      The directory to start from [default: .].",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#version",
+    "href": "docs/repos/cloudmesh-ai-shell.html#version",
+    "title": "Shell",
+    "section": "3.12 version",
+    "text": "3.12 version\nUsage:\n    version [-f] [--format=FORMAT]\n\nDescription:\n    Lists discovered plugins and versions in a formatted table.\n\nOptions:\n    -f                Show the file path for each plugin.\n    --format=FORMAT   Output format: table, md, rst, json [default: table].",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-git.html",
+    "href": "docs/repos/cloudmesh-ai-git.html",
+    "title": "Git",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 11:24:51\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-git\n\n\n\n1 README\n\n\n2 cloudmesh-ai-git\n\n\n\n3 Command Documentation\nNo specific commands found within this component’s source.",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Git"
+    ]
+  },
+  {
+    "objectID": "docs/manual/versions.html",
+    "href": "docs/manual/versions.html",
+    "title": "Versions",
+    "section": "",
+    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev4\n\n\nbanner\n4.0.1.dev4\n\n\nclear\n4.0.1.dev4\n\n\ndiagnostic\n4.0.1.dev4\n\n\nman\n4.0.1.dev4\n\n\nmarkdown\n4.0.1.dev4\n\n\npause\n4.0.1.dev4\n\n\npython_prg\n4.0.1.dev4\n\n\nshell\n4.0.1.dev4\n\n\nsysinfo\n4.0.1.dev4\n\n\ntree\n4.0.1.dev4\n\n\nversion\n4.0.1.dev4",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Versions"
+    ]
+  },
+  {
+    "objectID": "docs/manual/versions.html#components",
+    "href": "docs/manual/versions.html#components",
+    "title": "Versions",
+    "section": "",
+    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev4\n\n\nbanner\n4.0.1.dev4\n\n\nclear\n4.0.1.dev4\n\n\ndiagnostic\n4.0.1.dev4\n\n\nman\n4.0.1.dev4\n\n\nmarkdown\n4.0.1.dev4\n\n\npause\n4.0.1.dev4\n\n\npython_prg\n4.0.1.dev4\n\n\nshell\n4.0.1.dev4\n\n\nsysinfo\n4.0.1.dev4\n\n\ntree\n4.0.1.dev4\n\n\nversion\n4.0.1.dev4",
+    "crumbs": [
+      "Home",
+      "System Manual",
+      "Versions"
+    ]
+  },
+  {
+    "objectID": "docs/commands/shell.html",
+    "href": "docs/commands/shell.html",
+    "title": "Command: shell",
+    "section": "",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 11:13:06\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
+    "crumbs": [
+      "Home",
+      "Commands",
+      "Command: shell"
+    ]
+  },
+  {
+    "objectID": "docs/commands/shell.html#manual-page",
+    "href": "docs/commands/shell.html#manual-page",
+    "title": "Command: shell",
+    "section": "1 Manual Page",
+    "text": "1 Manual Page\nUsage:\n    shell -f FILE\n    shell [COMMAND...]\n\nDescription:\n    Executes a command or a script file in the system shell.\n\nOptions:\n    -f FILE  Pass a script file to be executed by the shell.\n\nArguments:\n    COMMAND  The system command to execute.",
+    "crumbs": [
+      "Home",
+      "Commands",
+      "Command: shell"
+    ]
   }
 ]

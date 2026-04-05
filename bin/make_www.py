@@ -96,6 +96,8 @@ def process_component(repo_name, plugin_data):
         
         if repo_abs_path in p_path.parents or repo_abs_path == p_path:
             cmd_name = plugin['Plugin']
+            
+            # Filter internal labels
             if "(" in cmd_name or ")" in cmd_name or "core" in cmd_name.lower():
                 continue
 
@@ -103,7 +105,7 @@ def process_component(repo_name, plugin_data):
             help_text = run_shell_cmd(["cma", "help", cmd_name])
             lines.extend([f"## `{cmd_name}` {{#command-{cmd_name}}}", "", "```text", help_text, "```", ""])
             
-            # Use relative link for the index and versions page
+            # Store relative link for manual/index cross-referencing
             local_registry.append({
                 "name": cmd_name, 
                 "link": f"../repos/{repo_name}.qmd#command-{cmd_name}"
@@ -114,13 +116,12 @@ def process_component(repo_name, plugin_data):
     return local_registry
 
 def write_versions_page(all_commands):
-    """Generates versions page and injects links into the generated table."""
+    """Generates versions page and injects active links into the MD table."""
     raw_table = run_shell_cmd(["cma", "version", "--format", "md"])
     
-    # Inject links into the Markdown table
     linked_table = raw_table
     for cmd in all_commands:
-        # Matches the command name if it sits between table pipes
+        # Pattern ensures we only link the name column in the table
         pattern = rf"\| {cmd['name']} \|"
         replacement = f"| [{cmd['name']}]({cmd['link']}) |"
         linked_table = re.sub(pattern, replacement, linked_table)
@@ -130,7 +131,20 @@ def write_versions_page(all_commands):
     
     content = ["---", "title: \"Versions\"", "---", "", "## Components and Commands", "", linked_table]
     path.write_text("\n".join(content), encoding="utf-8")
-    safe_print(f"  [OK] Manual: versions.qmd (Linked)")
+    safe_print("  [OK] Manual: versions.qmd (Linked)")
+
+def write_dev_manual():
+    """Copies README-dev.md from the shell repo to the website manual."""
+    shell_dev_md = SIBLING_ROOT / "cloudmesh-ai-shell" / "README-dev.md"
+    target_path = DOCS_REPO_ROOT / "docs" / "manual" / "developers.qmd"
+    
+    if shell_dev_md.exists():
+        content = shell_dev_md.read_text(encoding="utf-8")
+        full_content = "---\ntitle: \"Developers Manual\"\n---\n\n" + content
+        target_path.write_text(full_content, encoding="utf-8")
+        safe_print("  [OK] Manual: developers.qmd (Source: cloudmesh-ai-shell)")
+    else:
+        safe_print("  [!] Warning: README-dev.md not found in cloudmesh-ai-shell")
 
 # ==========================================
 # MAIN EXECUTION
@@ -139,10 +153,12 @@ def write_versions_page(all_commands):
 def main():
     print(f"Build Started at {datetime.now().strftime('%H:%M:%S')}")
     
+    # 1. Fetch initial plugin data
     json_data = run_shell_cmd(["cma", "version", "-f", "--format", "json"])
     try:
         plugin_data = json.loads(json_data)
-    except:
+    except Exception as e:
+        print(f"  [!] Error: Could not parse plugin JSON: {e}")
         plugin_data = []
 
     all_commands = []
@@ -156,14 +172,14 @@ def main():
             except Exception as e:
                 print(f"  [!] Thread Error: {e}")
 
-    # Generate Manual with injected URLs
-    print("\n--- Generating Versions Manual ---")
+    # 2. Generate System Manuals
+    print("\n--- Generating Manuals & Index ---")
     write_versions_page(all_commands)
+    write_dev_manual()
 
-    # Generate Command Index
-    print("\n--- Generating Command Index ---")
+    # 3. Generate Alphabetical Command Index
     sorted_cmds = sorted(all_commands, key=lambda x: x['name'])
-    idx_content = ["This index contains links to all discovered commands:\n"]
+    idx_content = ["This index contains links to all commands discovered across components:\n"]
     for cmd in sorted_cmds:
         idx_content.append(f"* [{cmd['name']}]({cmd['link']})")
     
@@ -171,7 +187,7 @@ def main():
     idx_path.parent.mkdir(parents=True, exist_ok=True)
     idx_path.write_text("---\ntitle: \"Command Index\"\n---\n\n" + "\n".join(idx_content))
     
-    print(f"  [OK] Index: index.qmd")
+    print("  [OK] Index: index.qmd")
     print(f"\nBuild Complete: {datetime.now().strftime('%H:%M:%S')}")
 
 if __name__ == "__main__":

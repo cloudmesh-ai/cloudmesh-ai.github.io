@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: _site
-  # Explicitly define the render targets for parallel processing
   render:
     - "*.qmd"
     - "docs/**/*.qmd"
@@ -9,6 +8,7 @@ project:
 website:
   title: "Cloudmesh AI"
   
+  # Top Navigation Bar
   navbar:
     background: "#f8f9fa"
     collapse: true
@@ -17,7 +17,10 @@ website:
         text: Home
       - href: docs/manual/versions.qmd
         text: Manual
+      - href: docs/manual/developers.qmd  # <--- New Top Entry
+        text: Developers
 
+  # Side Navigation Bar
   sidebar:
     - id: main-sidebar
       title: "Navigation"
@@ -26,6 +29,12 @@ website:
       contents:
         - href: index.qmd
           text: Welcome
+        - section: "System Manual"
+          contents:
+            - text: "Versions"
+              file: docs/manual/versions.qmd
+            - text: "Developers"            # <--- New Sidebar Entry
+              file: docs/manual/developers.qmd
         - section: "Components"
           contents:
             - text: "AI Common"
@@ -38,17 +47,13 @@ website:
               file: docs/repos/cloudmesh-ai-multipass.qmd
         - section: "Commands"
           contents:
-            - text: "Versions"
-              file: docs/manual/versions.qmd
             - text: "Index"
               file: docs/commands/index.qmd
 
-# --- PARALLEL INTEGRATION START ---
 execute:
-  cache: true      # Cache individual cell outputs
-  freeze: auto    # Only re-render files that have changed
-  daemon: 0       # Keep kernels alive to avoid startup overhead
-# --- PARALLEL INTEGRATION END ---
+  cache: true
+  freeze: auto
+  daemon: 0
 
 format:
   html:

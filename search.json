@@ -26,7 +26,7 @@
     "href": "docs/repos/cloudmesh-ai-multipass.html",
     "title": "Multipass",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 15:04:47\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-multipass",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-multipass",
     "crumbs": [
       "Home",
       "Components",
@@ -74,7 +74,7 @@
     "href": "docs/repos/cloudmesh-ai-common.html",
     "title": "Common",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 15:04:47\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-common\n\n\n\n1 README\n\n\n2 cloudmesh-common\nCommon libraries\n\n\n\n3 Command Reference",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-common\n\n\n\n1 README\n\n\n2 cloudmesh-common\nCommon libraries\n\n\n\n3 Command Reference",
     "crumbs": [
       "Home",
       "Components",
@@ -215,7 +215,7 @@
     "href": "docs/repos/cloudmesh-ai-git.html",
     "title": "Git",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 15:04:47\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-git\n\n\n\n1 README\n\n\n2 cloudmesh-ai-git\n\n\n\n3 Command Reference",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-git\n\n\n\n1 README\n\n\n2 cloudmesh-ai-git\n\n\n\n3 Command Reference",
     "crumbs": [
       "Home",
       "Components",
@@ -227,7 +227,7 @@
     "href": "docs/repos/cloudmesh-ai-shell.html",
     "title": "Shell",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 15:04:47\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
     "crumbs": [
       "Home",
       "Components",
@@ -287,7 +287,7 @@
     "href": "docs/repos/cloudmesh-ai-shell.html#command-create",
     "title": "Shell",
     "section": "3.3 create",
-    "text": "3.3 create\nUsage:\n    create COMMAND\n\nDescription:\n    Creates a new Cloudmesh plugin directory structure (please make sure\n    to replace &lt;COMMAND&gt; with a useful command name of your own.)\n\n    + cloudmesh-ai-&lt;COMMAND&gt;\n    ├── .gitignore\n    ├── Makefile\n    ├── README.md\n    ├── cma_plugin\n    │   └── &lt;COMMAND&gt;.py\n    └── pyproject.toml\n\n    The command can be installed with the following commands:\n\n    cd cloudmesh-ai-&lt;COMMAND&gt;\n    pip install -e .\n\n    Once you are happy with the command you could host it on github.",
+    "text": "3.3 create\nUsage:\n    create COMMAND",
     "crumbs": [
       "Home",
       "Components",

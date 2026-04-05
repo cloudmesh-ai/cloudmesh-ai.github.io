@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cloudmesh AI Documentation",
+    "section": "",
+    "text": "Welcome to the Cloudmesh AI ecosystem. We provide tools for seamless AI orchestration on HPC environments, including NVIDIA DGX Stations and A100/Blackwell clusters."
+  },
+  {
+    "objectID": "index.html#core-projects",
+    "href": "index.html#core-projects",
+    "title": "Cloudmesh AI Documentation",
+    "section": "Core Projects",
+    "text": "Core Projects\n\nAI Shell: A specialized CLI for managing LLMs and RAG workflows.\n[Tracker Native]: Mobile-first avian monitoring and triangulation.\n[Benchmarks]: Comparative analysis of YOLO models and RAG performance.\n\n\n[!TIP] Use pip install cloudmesh-cma to get started with the core shell."
+  }
+]

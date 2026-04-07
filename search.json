@@ -26,7 +26,7 @@
     "href": "docs/repos/cloudmesh-ai-multipass.html",
     "title": "Multipass",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-multipass",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-07 07:11:15\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-multipass",
     "crumbs": [
       "Home",
       "Components",
@@ -74,7 +74,7 @@
     "href": "docs/repos/cloudmesh-ai-common.html",
     "title": "Common",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-common\n\n\n\n1 README\n\n\n2 cloudmesh-common\nCommon libraries\n\n\n\n3 Command Reference",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-07 07:11:15\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-common\n\n\n\n1 README\n\n\n2 Cloudmesh AI Common\n\n\n\n3 Command Reference",
     "crumbs": [
       "Home",
       "Components",
@@ -107,7 +107,7 @@
     "href": "docs/commands/index.html",
     "title": "Command Index",
     "section": "",
-    "text": "This index contains links to all commands discovered across components:\n\nbanner\nclear\ncreate\ndiagnostic\nman\nmarkdown\npause\npython_prg\nshell\nsysinfo\ntree\nversion",
+    "text": "This index contains links to all commands discovered across components:\n\nalias\nbanner\ncd\nclear\nconfig\ncreate\ndiagnostic\nhistory\nman\nmarkdown\npause\npython_prg\nshell\nsysinfo\ntime\ntree\nversion\nwatch",
     "crumbs": [
       "Home",
       "Commands",
@@ -191,7 +191,7 @@
     "href": "docs/manual/versions.html",
     "title": "Versions",
     "section": "",
-    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev5\n\n\nbanner\n4.0.1.dev5\n\n\nclear\n4.0.1.dev5\n\n\ncreate\n4.0.1.dev5\n\n\ndiagnostic\n4.0.1.dev5\n\n\nman\n4.0.1.dev5\n\n\nmarkdown\n4.0.1.dev5\n\n\npause\n4.0.1.dev5\n\n\npython_prg\n4.0.1.dev5\n\n\nshell\n4.0.1.dev5\n\n\nsysinfo\n4.0.1.dev5\n\n\ntree\n4.0.1.dev5\n\n\nversion\n4.0.1.dev5",
+    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev6\n\n\nalias\n4.0.1.dev6\n\n\nbanner\n4.0.1.dev6\n\n\ncd\n4.0.1.dev6\n\n\nclear\n4.0.1.dev6\n\n\nconfig\n4.0.1.dev6\n\n\ncreate\n4.0.1.dev6\n\n\ndiagnostic\n4.0.1.dev6\n\n\nhistory\n4.0.1.dev6\n\n\nman\n4.0.1.dev6\n\n\nmarkdown\n4.0.1.dev6\n\n\npause\n4.0.1.dev6\n\n\npython_prg\n4.0.1.dev6\n\n\nshell\n4.0.1.dev6\n\n\nspeedtest\n0.0.1.dev1\n\n\nsysinfo\n4.0.1.dev6\n\n\ntime\n4.0.1.dev6\n\n\ntree\n4.0.1.dev6\n\n\ntunnel\n0.0.1.dev1\n\n\nversion\n4.0.1.dev6\n\n\nwatch\n4.0.1.dev6",
     "crumbs": [
       "Home",
       "System Manual",
@@ -203,7 +203,7 @@
     "href": "docs/manual/versions.html#components-and-commands",
     "title": "Versions",
     "section": "",
-    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev5\n\n\nbanner\n4.0.1.dev5\n\n\nclear\n4.0.1.dev5\n\n\ncreate\n4.0.1.dev5\n\n\ndiagnostic\n4.0.1.dev5\n\n\nman\n4.0.1.dev5\n\n\nmarkdown\n4.0.1.dev5\n\n\npause\n4.0.1.dev5\n\n\npython_prg\n4.0.1.dev5\n\n\nshell\n4.0.1.dev5\n\n\nsysinfo\n4.0.1.dev5\n\n\ntree\n4.0.1.dev5\n\n\nversion\n4.0.1.dev5",
+    "text": "Plugin\nVersion\n\n\n\n\ncma (core)\n4.0.1.dev6\n\n\nalias\n4.0.1.dev6\n\n\nbanner\n4.0.1.dev6\n\n\ncd\n4.0.1.dev6\n\n\nclear\n4.0.1.dev6\n\n\nconfig\n4.0.1.dev6\n\n\ncreate\n4.0.1.dev6\n\n\ndiagnostic\n4.0.1.dev6\n\n\nhistory\n4.0.1.dev6\n\n\nman\n4.0.1.dev6\n\n\nmarkdown\n4.0.1.dev6\n\n\npause\n4.0.1.dev6\n\n\npython_prg\n4.0.1.dev6\n\n\nshell\n4.0.1.dev6\n\n\nspeedtest\n0.0.1.dev1\n\n\nsysinfo\n4.0.1.dev6\n\n\ntime\n4.0.1.dev6\n\n\ntree\n4.0.1.dev6\n\n\ntunnel\n0.0.1.dev1\n\n\nversion\n4.0.1.dev6\n\n\nwatch\n4.0.1.dev6",
     "crumbs": [
       "Home",
       "System Manual",
@@ -215,7 +215,7 @@
     "href": "docs/repos/cloudmesh-ai-git.html",
     "title": "Git",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-git\n\n\n\n1 README\n\n\n2 cloudmesh-ai-git\n\n\n\n3 Command Reference",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-07 07:11:15\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-git\n\n\n\n1 README\n\n\n2 cloudmesh-ai-git\n\n\n\n3 Command Reference",
     "crumbs": [
       "Home",
       "Components",
@@ -227,7 +227,7 @@
     "href": "docs/repos/cloudmesh-ai-shell.html",
     "title": "Shell",
     "section": "",
-    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-05 17:07:59\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
+    "text": "NoteGithub Version: 0.0.1    Date: 2026-04-07 07:11:15\n\n\n\nSource Code: https://github.com/cloudmesh-ai/cloudmesh-ai-shell",
     "crumbs": [
       "Home",
       "Components",
@@ -259,11 +259,35 @@
     ]
   },
   {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#command-alias",
+    "href": "docs/repos/cloudmesh-ai-shell.html#command-alias",
+    "title": "Shell",
+    "section": "3.1 alias",
+    "text": "3.1 alias\nUsage:\n    alias\n    alias &lt;name&gt; &lt;command&gt;...\n    alias list\n    alias delete &lt;name&gt;\n    alias clear\n\nDescription:\n    Manage command aliases for quick access to frequently used commands.\n\nOptions:\n    (none)              List all aliases\n    list                List all aliases\n    &lt;name&gt; &lt;command&gt;    Create alias\n    delete &lt;name&gt;       Delete an alias\n    clear               Clear all aliases\n\nExamples:\n    alias ll ls -la     # Create alias 'll' for 'ls -la'\n    alias v version     # Create alias 'v' for 'version'\n    alias                # Show all aliases\n    alias list          # Show all aliases\n    alias delete ll     # Delete the 'll' alias\n    alias clear         # Delete all aliases",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-banner",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-banner",
     "title": "Shell",
-    "section": "3.1 banner",
-    "text": "3.1 banner\nUsage:\n    banner [-c CHAR] [-n WIDTH] [-i INDENT] [-r COLOR] TEXT...\n\nOptions:\n    -c CHAR    The character to use [default: #]\n    -n WIDTH   The width of the banner [default: 70]\n    -i INDENT  The indentation [default: 0]\n    -r COLOR   The color (RED, GREEN, BLUE) [default: NORMAL]\n\nDescription:\n    Prints a banner from a one line text message.",
+    "section": "3.2 banner",
+    "text": "3.2 banner\nUsage:\n    banner [-c CHAR] [-n WIDTH] [-i INDENT] [-r COLOR] TEXT...\n\nOptions:\n    -c CHAR    The character to use [default: #]\n    -n WIDTH   The width of the banner [default: 70]\n    -i INDENT  The indentation [default: 0]\n    -r COLOR   The color (RED, GREEN, BLUE) [default: NORMAL]\n\nDescription:\n    Prints a banner from a one line text message.\n\nExamples:\n    banner Hello World\n    banner -c * Welcome\n    banner -n 50 -i 2 Important\n    banner -r RED Error Message\n    banner -c @ -n 60 -i 4 Status",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#command-cd",
+    "href": "docs/repos/cloudmesh-ai-shell.html#command-cd",
+    "title": "Shell",
+    "section": "3.3 cd",
+    "text": "3.3 cd\nUsage:\n    cd [&lt;path&gt;]\n    cd -\n    cd ~\n\nDescription:\n    Change the current working directory.\n\nArguments:\n    &lt;path&gt;    Directory path to change to\n    -         Return to previous directory\n    ~         Go to home directory\n    (empty)   Go to home directory\n\nExamples:\n    cd /tmp                   # Change to /tmp\n    cd ~                      # Change to home directory\n    cd -                      # Return to previous directory\n    cd ..                     # Go up one directory\n    cd                        # Go to home directory",
     "crumbs": [
       "Home",
       "Components",
@@ -274,8 +298,20 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-clear",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-clear",
     "title": "Shell",
-    "section": "3.2 clear",
-    "text": "3.2 clear\nUsage:\n    clear\n\nDescription:\n    Clears the screen.",
+    "section": "3.4 clear",
+    "text": "3.4 clear\nUsage:\n    clear\n\nDescription:\n    Clears the screen.\n\nExamples:\n    clear                # Clear the terminal screen",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#command-config",
+    "href": "docs/repos/cloudmesh-ai-shell.html#command-config",
+    "title": "Shell",
+    "section": "3.5 config",
+    "text": "3.5 config\nUsage:\n    config\n    config list\n    config get &lt;key&gt;\n    config set &lt;key&gt; &lt;value&gt;\n    config reset\n    config show defaults\n\nDescription:\n    Manage shell configuration and preferences.\n\n    Configuration is stored in ~/.config/cloudmesh/ai/config.json\n    and persists across sessions.\n\nArguments:\n    (none)              Show current config summary\n    list                Show all configuration options\n    get &lt;key&gt;           Get value of specific config key\n    set &lt;key&gt; &lt;value&gt;   Set config value\n    reset               Reset to default configuration\n    show defaults       Show default values\n\nOptions:\n    (none)\n\nExamples:\n    config                          # Show config summary\n    config list                     # List all config values\n    config get history_max_size     # Get specific value\n    config set show_timing true     # Enable timing display\n    config set command_timeout 60   # Set timeout to 60 seconds\n    config set theme dark           # Set theme\n    config reset                    # Reset to defaults\n    config show defaults            # Show default configuration\n\nBugs:\n    - the theme is not implemented yet, so setting it has no effect",
     "crumbs": [
       "Home",
       "Components",
@@ -286,8 +322,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-create",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-create",
     "title": "Shell",
-    "section": "3.3 create",
-    "text": "3.3 create\nUsage:\n    create COMMAND",
+    "section": "3.6 create",
+    "text": "3.6 create\nUsage:\n    create COMMAND [DIRNAME] [--dir=DIRNAME]\n\nDescription:\n    Creates a new plugin scaffolding directory for the specified command.\n    If DIRNAME or --dir=. is used, the files are created in the current\n    working directory instead of a new subdirectory. If --dir=&lt;DIR&gt; is\n    provided, the plugin is created inside that directory.\n\nArguments:\n    COMMAND   Name of the new command/plugin to create.\n    DIRNAME   Optional target directory (e.g., \".\").\n\nOptions:\n    --dir=DIRNAME  The directory to create the plugin in.\n\nExamples:\n    create hello              # Create in ./cloudmesh-ai-hello\n    create calculator .       # Create directly in current directory\n    create mytools --dir=.    # Create directly in current directory\n    create mytools --dir=./plugins  # Create inside ./plugins",
     "crumbs": [
       "Home",
       "Components",
@@ -298,8 +334,20 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-diagnostic",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-diagnostic",
     "title": "Shell",
-    "section": "3.4 diagnostic",
-    "text": "3.4 diagnostic\n*** No help on diagnostic",
+    "section": "3.7 diagnostic",
+    "text": "3.7 diagnostic\n*** No help on diagnostic",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#command-history",
+    "href": "docs/repos/cloudmesh-ai-shell.html#command-history",
+    "title": "Shell",
+    "section": "3.8 history",
+    "text": "3.8 history\nUsage:\n    history [options]\n    history search &lt;term&gt;\n    history clear [&lt;confirm&gt;]\n\nOptions:\n    -n COUNT   Show last COUNT commands [default: 20]",
     "crumbs": [
       "Home",
       "Components",
@@ -310,8 +358,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-man",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-man",
     "title": "Shell",
-    "section": "3.5 man",
-    "text": "3.5 man\nUsage:\n    man [-f] [--format=FORMAT] [COMMAND]\n\nDescription:\n    Generates a manual. If no command is provided, it lists all \n    discovered plugins and their full manual pages.\n\nOptions:\n    -f               Show the file path for each plugin (text mode only).\n    --format=FORMAT  Output format: text, md, rst [default: text].",
+    "section": "3.9 man",
+    "text": "3.9 man\nUsage:\n    man [-f] [--format=FORMAT] [COMMAND]\n\nDescription:\n    Generates a manual. If no command is provided, it lists all\n    discovered plugins and their full manual pages.\n\nOptions:\n    -f               Show the file path for each plugin (text mode only).\n    --format=FORMAT  Output format: text, md, rst [default: text].\n\nExamples:\n    man                         # Show all plugin manuals\n    man banner                  # Show manual for banner command\n    man version -f              # Show version manual with file paths\n    man --format=md banner      # Show banner manual in Markdown\n    man --format=rst history    # Show history manual in reStructuredText",
     "crumbs": [
       "Home",
       "Components",
@@ -322,8 +370,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-markdown",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-markdown",
     "title": "Shell",
-    "section": "3.6 markdown",
-    "text": "3.6 markdown\nUsage:\n    markdown fix gemini &lt;filename&gt;\n\nDescription:\n    Surgically removes Gemini 'Bash' labels, removes leading \n    indentation for code blocks, and wraps naked commands.",
+    "section": "3.10 markdown",
+    "text": "3.10 markdown\nUsage:\n    markdown fix gemini &lt;filename&gt;\n\nDescription:\n    Surgically removes Gemini 'Bash' labels, removes leading\n    indentation for code blocks, and wraps naked commands.\n\nExamples:\n    markdown fix gemini doc.md           # Fix Gemini-generated markdown\n    markdown fix gemini guide.md         # Clean up markdown file",
     "crumbs": [
       "Home",
       "Components",
@@ -334,8 +382,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-pause",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-pause",
     "title": "Shell",
-    "section": "3.7 pause",
-    "text": "3.7 pause\nUsage:\n    pause TIME\n\nDescription:\n    Pauses the shell execution for a specified duration.\n    TIME can be a number (seconds) or include a unit (s, m, h).\n\nExamples:\n    pause 10\n    pause 5s\n    pause 2m",
+    "section": "3.11 pause",
+    "text": "3.11 pause\nUsage:\n    pause TIME\n\nDescription:\n    Pauses the shell execution for a specified duration.\n    TIME can be a number (seconds) or include a unit (s, m, h).\n\nExamples:\n    pause 10\n    pause 5s\n    pause 2m",
     "crumbs": [
       "Home",
       "Components",
@@ -346,8 +394,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-python_prg",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-python_prg",
     "title": "Shell",
-    "section": "3.8 python_prg",
-    "text": "3.8 python_prg\n*** No help on python_prg",
+    "section": "3.12 python_prg",
+    "text": "3.12 python_prg\n*** No help on python_prg",
     "crumbs": [
       "Home",
       "Components",
@@ -358,8 +406,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-shell",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-shell",
     "title": "Shell",
-    "section": "3.9 shell",
-    "text": "3.9 shell\nUsage:\n    shell -f FILE\n    shell [COMMAND...]\n\nDescription:\n    Executes a command or a script file in the system shell.\n\nOptions:\n    -f FILE  Pass a script file to be executed by the shell.\n\nArguments:\n    COMMAND  The system command to execute.",
+    "section": "3.13 shell",
+    "text": "3.13 shell\nUsage:\n    shell -f FILE\n    shell [COMMAND...]\n\nDescription:\n    Executes a command or a script file in the system shell.\n\nOptions:\n    -f FILE  Pass a script file to be executed by the shell.\n\nArguments:\n    COMMAND  The system command to execute.\n\nExamples:\n    shell ls -la                    # List files in detail\n    shell echo Hello World          # Print text\n    shell python --version          # Show Python version\n    shell -f script.sh              # Execute shell script\n    shell mkdir -p /tmp/test        # Create nested directories",
     "crumbs": [
       "Home",
       "Components",
@@ -370,8 +418,20 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-sysinfo",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-sysinfo",
     "title": "Shell",
-    "section": "3.10 sysinfo",
-    "text": "3.10 sysinfo\nUsage:\n    sysinfo [-a] [-v] [-t] [-m] [-d] [-b] [-n] [-u] [-l] [-g] [-c]\n\nDescription:\n    Prints hardware and system information.\n\nOptions:\n    -a        Show all information\n    -v        Verbose topology view\n    -t        Thread/Core summary\n    -m        Display memory usage (RAM/Swap)\n    -d        Display disk usage\n    -b        Display battery status\n    -n        Display network interfaces (IPs)\n    -u        Display system uptime\n    -l        Display current CPU load\n    -g        Display GPU information\n    -c        Display CPU/GPU temperatures (Celsius)",
+    "section": "3.14 sysinfo",
+    "text": "3.14 sysinfo\nUsage:\n    sysinfo [-a] [-v] [-t] [-m] [-d] [-b] [-n] [-u] [-l] [-g] [-c]\n\nDescription:\n    Prints hardware and system information.\n\nOptions:\n    -a        Show all information\n    -v        Verbose topology view\n    -t        Thread/Core summary\n    -m        Display memory usage (RAM/Swap)\n    -d        Display disk usage\n    -b        Display battery status\n    -n        Display network interfaces (IPs)\n    -u        Display system uptime\n    -l        Display current CPU load\n    -g        Display GPU information\n    -c        Display CPU/GPU temperatures (Celsius)\n\nExamples:\n    sysinfo -a              # Show all system information\n    sysinfo -m -d -u        # Show memory, disk, and uptime\n    sysinfo -t -l           # Show CPU threads and load average\n    sysinfo -g -c           # Show GPU and temperature info",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#command-time",
+    "href": "docs/repos/cloudmesh-ai-shell.html#command-time",
+    "title": "Shell",
+    "section": "3.15 time",
+    "text": "3.15 time\nUsage:\n    time [on|off|true|false|1|0] [COMMAND...]\n\nDescription:\n    Manage command timing and execution.\n\n    - `time command args` - Execute command and show execution time\n    - `time on` - Enable automatic timer (shows time after each command)\n    - `time off` - Disable automatic timer\n\n    Note: All command timings are always recorded in history with start/end times.\n\nArguments:\n    on|true|1       Enable automatic timer display\n    off|false|0     Disable automatic timer display\n    COMMAND         Command and arguments to time\n\nExamples:\n    time version                  # Time the version command\n    time ls -la /tmp              # Time a shell command\n    time on                       # Enable auto-timer\n    time off                      # Disable auto-timer\n    time shell sleep 2            # Time a 2-second sleep",
     "crumbs": [
       "Home",
       "Components",
@@ -382,8 +442,8 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-tree",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-tree",
     "title": "Shell",
-    "section": "3.11 tree",
-    "text": "3.11 tree\nUsage:\n    tree [-c] [PATH]\n\nDescription:\n    Prints a visual directory tree of relevant code, \n    respecting .gitignore rules and hiding meta-files.\n    Use -c to also print the contents of each file.\n\nOptions:\n    -c        Cat/Print the content of each file found.\n    PATH      The directory to start from [default: .].",
+    "section": "3.16 tree",
+    "text": "3.16 tree\nUsage:\n    tree [-c] [-e PATTERN]... [-i PATTERN]... [PATH]\n\nDescription:\n    Prints a visual directory tree, respecting .gitignore,\n    internal ignores, and user-specified filters.\n\nOptions:\n    -c              Cat/Print the content of each file found.\n    -e PATTERN      Exclude files/dirs matching pattern (e.g., *.md or \"tests/\").\n                    Supports comma-separated patterns: *.md,tmp,*.log\n    -i PATTERN      Include only files/dirs matching pattern (e.g., *.py).\n                    Supports comma-separated patterns: *.py,*.md\n    PATH            The directory to start from [default: .].",
     "crumbs": [
       "Home",
       "Components",
@@ -394,8 +454,20 @@
     "objectID": "docs/repos/cloudmesh-ai-shell.html#command-version",
     "href": "docs/repos/cloudmesh-ai-shell.html#command-version",
     "title": "Shell",
-    "section": "3.12 version",
-    "text": "3.12 version\nUsage:\n    version [-f] [--format=FORMAT]\n\nDescription:\n    Lists discovered plugins and versions in a formatted table.\n\nOptions:\n    -f                Show the file path for each plugin.\n    --format=FORMAT   Output format: table, md, rst, json [default: table].",
+    "section": "3.17 version",
+    "text": "3.17 version\nUsage:\n    version [-f] [--format=FORMAT]\n\nDescription:\n    Lists discovered plugins and versions in a formatted table.\n\nOptions:\n    -f                Show the file path for each plugin.\n    --format=FORMAT   Output format: table, md, rst, json [default: table].\n\nExamples:\n    version                     # Show all plugins in table format\n    version -f                  # Show plugins with file paths\n    version --format=json       # Show plugins as JSON",
+    "crumbs": [
+      "Home",
+      "Components",
+      "AI Shell"
+    ]
+  },
+  {
+    "objectID": "docs/repos/cloudmesh-ai-shell.html#command-watch",
+    "href": "docs/repos/cloudmesh-ai-shell.html#command-watch",
+    "title": "Shell",
+    "section": "3.18 watch",
+    "text": "3.18 watch\nUsage:\n    watch [-c COUNT] INTERVAL COMMAND...\n\nDescription:\n    Repeatedly runs a command at a specified interval.\n    Press Ctrl+C to stop watching early.\n\nArguments:\n    INTERVAL    Time in seconds between executions (e.g., 1, 0.5).\n    COMMAND     The command string to execute.\n\nOptions:\n    -c COUNT    Number of times to run the command before stopping.\n\nExamples:\n    watch 2 banner hello\n    watch -c 3 1 banner a",
     "crumbs": [
       "Home",
       "Components",

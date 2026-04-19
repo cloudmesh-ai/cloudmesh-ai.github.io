@@ -1,0 +1,17 @@
+{% extends "!layout.html" %}
+
+{% block page %}
+<div class="custom-top-nav">
+    <div class="nav-container">
+        <a href="{{ pathto('_static/logo.png', 1) }}" class="nav-logo">Cloudmesh AI</a>
+        <div class="nav-links">
+            <a href="{{ pathto('index.html') }}">Home</a>
+            <a href="{{ pathto('quickstart.html') }}">Quickstart</a>
+            <a href="{{ pathto('commands.html') }}">Commands</a>
+            <a href="{{ pathto('manual.html') }}">Manual</a>
+            <a href="{{ pathto('modules.html') }}">API</a>
+        </div>
+    </div>
+</div>
+{{ super() }}
+{% endblock %}

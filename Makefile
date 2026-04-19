@@ -1,62 +1,105 @@
-# ==========================================
-# Cloudmesh AI Documentation Makefile
-# ==========================================
+# Makefile for Cloudmesh AI Documentation
 
-# Variables
-PYTHON       := python3
-QUARTO       := quarto
-BUILD_SCRIPT := bin/make_www.py
+SPHINX_BUILD = sphinx-build
+SPHINX_APIDOC = sphinx-apidoc
+DOCS_DIR = docs
+BUILD_DIR = _build/html/
 
-# Detect number of CPU cores for parallel rendering
-# Default to 4 if detection fails
-JOBS := $(shell nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
+PACKAGES = cloudmesh.ai.common \
+           cloudmesh.ai.cmc
 
-.PHONY: all www view publish clean help
+.PHONY: doc view clean
 
-# Default target
-all: www
+doc:
+	@echo "Generating API documentation..."
+	@# Clear previous API docs to avoid stale files
+	rm -rf $(DOCS_DIR)/api
+	mkdir -p $(DOCS_DIR)/api
+	@# Process specified packages
+	@for pkg_dot in $(PACKAGES); do \
+		pkg_dash=$$(echo $$pkg_dot | sed 's/\./-/g'); \
+		if [ "$$pkg_dash" = "cloudmesh-ai-cmc" ]; then \
+			mkdir -p $(DOCS_DIR)/api/$$pkg_dash; \
+			echo "$$pkg_dash package" > $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "==================================================" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo ".. toctree::" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "   :maxdepth: 2" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "   core" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "   commands" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "   utils" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "Detailed API Reference" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "-----------------------" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "Core Modules" > $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+			echo "=============" >> $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+			echo "Command Modules" > $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+			echo "===============" >> $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+			echo "Utility Modules" > $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+			echo "===============" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+			for mod in cloudmesh.ai.cmc.main cloudmesh.ai.cmc.registry cloudmesh.ai.cmc.context cloudmesh.ai.cmc.utils; do \
+				echo "" >> $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+				echo ".. automodule:: $$mod" >> $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+				echo "   :members:" >> $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+				echo "   :undoc-members:" >> $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+				echo "   :show-inheritance:" >> $(DOCS_DIR)/api/$$pkg_dash/core.rst; \
+			done; \
+			for mod in cloudmesh.ai.command.banner cloudmesh.ai.command.command cloudmesh.ai.command.docs cloudmesh.ai.command.doctor cloudmesh.ai.command.help_cmd cloudmesh.ai.command.man cloudmesh.ai.command.markdown.gemini cloudmesh.ai.command.shell cloudmesh.ai.command.sys.info cloudmesh.ai.command.time cloudmesh.ai.command.tree cloudmesh.ai.command.completion cloudmesh.ai.command.config cloudmesh.ai.command.version cloudmesh.ai.command.plugins cloudmesh.ai.command.telemetry cloudmesh.ai.command.logs; do \
+				echo "" >> $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+				echo ".. automodule:: $$mod" >> $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+				echo "   :members:" >> $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+				echo "   :undoc-members:" >> $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+				echo "   :show-inheritance:" >> $(DOCS_DIR)/api/$$pkg_dash/commands.rst; \
+			done; \
+		elif [ "$$pkg_dash" = "cloudmesh-ai-common" ]; then \
+			mkdir -p $(DOCS_DIR)/api/$$pkg_dash; \
+			echo "$$pkg_dash package" > $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "==================================================" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo ".. toctree::" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "   :maxdepth: 2" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "   utils" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "Detailed API Reference" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "-----------------------" >> $(DOCS_DIR)/api/$$pkg_dash/cloudmesh.rst; \
+			echo "Utility Modules" > $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+			echo "===============" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+			for mod in cloudmesh.ai.common.time cloudmesh.ai.common.logging cloudmesh.ai.common.user cloudmesh.ai.common.aggregation cloudmesh.ai.common.io cloudmesh.ai.common.telemetry cloudmesh.ai.common.stopwatch cloudmesh.ai.common.sys; do \
+				echo "" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+				echo ".. automodule:: $$mod" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+				echo "   :members:" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+				echo "   :undoc-members:" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+				echo "   :show-inheritance:" >> $(DOCS_DIR)/api/$$pkg_dash/utils.rst; \
+			done; \
+		fi; \
+	done
+	@echo "Creating modules.rst..."
+	@echo "API Reference" > $(DOCS_DIR)/modules.rst; \
+	echo "==============" >> $(DOCS_DIR)/modules.rst; \
+	echo "" >> $(DOCS_DIR)/modules.rst; \
+	echo ".. toctree::" >> $(DOCS_DIR)/modules.rst; \
+	echo "   :maxdepth: 2" >> $(DOCS_DIR)/modules.rst; \
+	echo "" >> $(DOCS_DIR)/modules.rst; \
+	for dir in $(DOCS_DIR)/api/*; do \
+		if [ -d "$$dir" ]; then \
+			rel_dir=$${dir#$(DOCS_DIR)/}; \
+			echo "   $$rel_dir/cloudmesh" >> $(DOCS_DIR)/modules.rst; \
+		fi; \
+	done
+	@echo "Building HTML..."
+	$(SPHINX_BUILD) -b html $(shell pwd)/$(DOCS_DIR) $(shell pwd)/$(BUILD_DIR)
+	@echo "Documentation build complete in $(BUILD_DIR)."
 
-help:
-	@echo "Cloudmesh AI Documentation Build System"
-	@echo ""
-	@echo "Targets:"
-	@echo "  make www      - Full clean, component discovery, and parallel render"
-	@echo "  make view     - Run discovery and start Quarto live preview"
-	@echo "  make publish  - Full build and deploy to GitHub Pages"
-	@echo "  make clean    - Wipe Quarto cache and build artifacts (fixes BadResource errors)"
-
-# --- Core Targets ---
-
-# The 'www' target: Parallelizes both the Python discovery and the Quarto render
-www: clean
-	@echo "--- [1/3] Running Parallel Component Discovery ---"
-	$(PYTHON) $(BUILD_SCRIPT)
-	@echo "--- [2/3] Rendering Quarto Website ($(JOBS) jobs) ---"
-	# Using environment variable to avoid Pandoc 'Unknown option' errors
-	QUARTO_JOBS=$(JOBS) $(QUARTO) render
-	@echo "--- [3/3] Build complete. Site in _site/index.html"
-
-# Live preview for local development
 view:
-	$(PYTHON) $(BUILD_SCRIPT)
-	QUARTO_JOBS=$(JOBS) $(QUARTO) preview
+	@if [ -f $(BUILD_DIR)index.html ]; then \
+		open $(BUILD_DIR)index.html; \
+	else \
+		echo "index.html not found in $(BUILD_DIR). Run 'make doc' first."; \
+	fi
 
-# Clean target: Specifically removes .quarto to prevent Deno/Sass cache corruption
 clean:
-	@echo "--- Cleaning Quarto Cache and Build Artifacts ---"
-	rm -rf .quarto/
-	rm -rf _site/
-	@# Note: 'quarto clean' is omitted as it is not a valid command in all versions
-
-# Publish to GitHub Pages
-publish: clean
-	@echo "--- Preparing Production Build ---"
-	$(PYTHON) $(BUILD_SCRIPT)
-	@echo "--- Rendering for Production ---"
-	QUARTO_JOBS=$(JOBS) $(QUARTO) render
-	@echo "--- Publishing to gh-pages ---"
-	$(QUARTO) publish gh-pages
-
-# ==========================================
-# End of Makefile
-# ==========================================
+	rm -rf _build
+	rm -rf $(DOCS_DIR)/api
+	rm -f $(DOCS_DIR)/modules.rst
